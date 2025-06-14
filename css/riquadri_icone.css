@@ -31,7 +31,7 @@
 }
 
 .azzurroCielo {
-  background-color: #7DC0F6 !important;
+  background-color: #9dd2fd !important;
 }
 
 .azzurroTiepoloScuro {
@@ -39,7 +39,7 @@
 }
 
 .biancoVero {
-  background-color: white;
+  background-color: white !important;
 }
 
 .rossastro {
@@ -115,12 +115,15 @@
   background-color: #F0EDEE;
 }
 
+.nero {
+  color: #555050;
+}
+
 .icona {
   padding: 5%;
   background-color: #f6e0c5;
   display: flex;
   justify-content: center;
-  width: 18% !important;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }

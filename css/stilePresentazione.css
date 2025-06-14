@@ -1093,7 +1093,6 @@ a.linkSede {
   background-color: #f6e0c5;
   display: flex;
   justify-content: center;
-  width: 18% !important;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
