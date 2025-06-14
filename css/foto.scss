@@ -1,0 +1,26 @@
+@import "colori";
+
+.foto{
+    position: relative;
+    height: 50vh;
+    outline: 1px solid $doratoScuro;
+    border: 10px solid white;
+    top: 0;
+    background-color: $doratoChiaro;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition: all 0.5s ease-in-out;
+    filter: sepia(10%) saturate(70%);
+}
+
+.foto  img{
+    height: 100%;
+    min-width: 100%;
+}
+
+.foto:hover {
+    transform: translateY(-30px) scale(1.3);
+}

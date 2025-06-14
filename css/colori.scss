@@ -1,0 +1,160 @@
+$bianco: #F0EDEE;
+$biancoChiaro: #f8f5f6;
+$biancoVerdeChiaro: #f9f5f1;
+$verde: #cfffc6;
+$verdeChiaro: #D2DEB1;
+
+$rosaBrillante: #F45866;
+$rossoReale: #F71735;
+$fiordalisoBlu: #7692FF;
+$azzurroCielo: #9dd2fd;
+
+$azzurroCieloScuro: #3893db;
+$fiordalisoBluOpaco:    #c1cdfa;
+$marroneSabbia: #FF9B42;
+$amarantoViola: #AF1B3F;
+$cardovano: #8C4843;
+$rossoGeraneo: #E76144;
+
+$grigioDettaglio:#7b7b7b;
+$biancoGrigio: #FAFAF5;
+$azzurroTiepoloUltraChiaro: #cbf1ff;
+$azzurroTiepoloChiaro: #8FBACA;
+$azzurroTiepoloScuro: #67989F;
+
+$terraSiena: #D9BF9F;
+$terraSienaChiara: #f6e0c5;
+$terraSienaChiara2: #e5c7a3;
+$rossoFoglia: #cba177ff;
+
+$provaGrigio: #FCFBFB;
+$doratoChiaro: #f6efea;
+$doratoMoltoChiaro: #f1f1f1;
+
+
+$dorato: #DACEC4;
+$doratoScuro: #aba19a; 
+$rossastro: #b78469;
+$rossastroChiaro: #d59e80;
+$doratoscuro: #c5b9b0;
+
+.dorato{
+background-color: $dorato !important;
+}
+
+.terra{
+background-color: $terraSiena !important;
+}
+
+.grigioSfondo{
+    background-color: $provaGrigio;
+} 
+.biancoChiaro {
+    background-color: $biancoVerdeChiaro;
+}
+
+.rossoFoglia{
+    background-color: $rossoFoglia;
+}
+
+.rossoGeraneo{
+    background-color: $rossoGeraneo;
+}
+
+.verdeChiaro{
+    background-color: $verdeChiaro;
+}
+.azzurroChiaro{
+    background-color: $azzurroTiepoloChiaro !important;
+}
+
+.azzurroCielo{
+    background-color: $azzurroCielo !important;
+}
+
+
+.azzurroTiepoloScuro {
+    background-color: $azzurroTiepoloScuro !important;
+}
+
+.biancoVero {
+    background-color: white !important;
+}
+.rossastro {
+    background-color: $rossastro !important;
+}
+.terraGradient {
+    background: #D9BF9F;
+    background: linear-gradient(46deg,rgba(217, 191, 159, 1) 25%, rgba(232, 191, 142, 1) 100%);
+}
+.rossastroGradient {
+    background: #B78469;
+    background: linear-gradient(46deg,rgba(183, 132, 105, 1) 50%, rgba(219, 181, 134, 1) 100%);
+}
+.rossastroGradient label{
+background:none !important;
+color: white !important;
+}
+
+.rossastro input[type="text"]{
+    color: white !important;
+    font-weight: 500;
+
+}
+
+.rossastro input[type="text"]:hover{
+    border-left: 1px solid $bianco;
+    border-top: 1px solid $bianco;
+
+}
+
+.rossastro::placeholder{
+    color: white;
+    font-weight: 500;
+}
+
+.rossastro h3{
+    color: white;
+}
+
+.strisciaAggiunta:hover, .strisciaAggiunta:focus {
+    transform: translate(2px,2px);
+    box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px -3px rgba(0, 0, 0, 0.5);    
+}
+
+.rossastroGradient .strisciaAggiunta{
+    background-color: $rossastro;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(0, 0, 0, 0.5);
+    color: $bianco;
+}
+
+.rossastro .bottone-aggiunta {
+    background-color: $rossastro;
+    border-style: none;
+    color: white;
+}
+
+.rossastroGradient .strisciaAggiunta:hover,.rossastro .strisciaAggiunta:focus{
+    transform: translate(2px,2px);
+    box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px -3px rgba(0, 0, 0, 0.5);
+
+    .bottone-aggiunta {
+        background-color: $rossastro;
+    }
+} 
+
+.bianco{
+    background-color: $bianco !important;
+    }
+
+
+.terraGradient .form-inputDue:hover, .form-inputDue:focus{
+    background-color: $bianco;
+}
+
+$nero: #555050;
+
+.nero{
+    color: $nero;
+}

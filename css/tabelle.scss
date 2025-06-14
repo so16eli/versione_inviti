@@ -1,0 +1,89 @@
+//HTML GUIDA In commento in riga seguente
+                    /*
+                        <div class="tabella">
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">N.</th>
+                                      <th scope="col">Nome_e_cognome</th>
+                                      <th scope="col">Partecipazione</th>
+                                      <th scope="col">Azione</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td scope="row" class="num">1</td>
+                                      <td>Maria Rossi</td>
+                                      <td>Sì</td>
+                                      <td  class="lente">
+                                        <img width="25" height="25" src="https://img.icons8.com/wired/64/view-file.png" alt="view-file"/>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td scope="row" class="num">2</td>
+                                      <td>Federica Bianchi</td>
+                                      <td>No</td>
+                                      <td  class="lente">
+                                        <img width="25" height="25" src="https://img.icons8.com/wired/64/view-file.png" alt="view-file"/>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td scope="row" class="num">3</td>
+                                      <td>Vera Verde</td>
+                                      <td>Sì</td>
+                                      <td class="lente">
+                                        <img width="25" height="25" src="https://img.icons8.com/wired/64/view-file.png" alt="view-file"/>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </div>  
+            */
+
+.tabella {
+    visibility: visible;
+    display: block !important;
+    min-width: fit-content;
+    min-height: fit-content;
+    z-index: 3 !important;
+    box-sizing: border-box;
+    margin-top: -20%;
+    outline: 2px solid $dorato;
+    border: 10px solid white;
+    top: 0;
+    padding: 0%;
+    background-color: $doratoChiaro;
+    perspective: none !important;
+    transform-style: flat !important;
+    will-change: auto !important;
+
+}
+
+table{
+    table-layout: auto;
+    z-index: 4;
+    font-size: 12px;
+    padding: 5% !important;
+    transform: none !important;
+}
+
+.dettagliTabelle{
+    transform: none !important;
+
+   // backface-visibility: hidden !important;
+      perspective: none !important;
+      transform-style: flat !important;
+      will-change: auto !important;
+}
+
+tr, td{
+    width: 100%;
+    padding: 5%;
+    background-color: $doratoMoltoChiaro !important;
+}
+
+th{
+    font-weight: 500;
+    background-color: $azzurroTiepoloUltraChiaro !important;
+    transform: none !important;
+}

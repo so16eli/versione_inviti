@@ -1,0 +1,638 @@
+@import "testi";
+@import "colori";
+@import "parallassi";
+@import "foto";
+@import "keyframes";
+@import "inputForm";
+@import "riquadri_icone";
+@import "decorazioni";
+@import "video";
+@import "tabelle";
+
+
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    perspective: 100px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 0;
+    font-size: 12px !important;
+    cursor: url("C:/xampp/htdocs/apprendimento/immagini/icone/fogliaSingola8.png") 4 4, auto;
+}
+
+
+#puntatore{
+    position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1 !important;
+}
+
+#puntatore canvas {
+      background-color: transparent !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: 4 !important;
+      pointer-events: none;
+}
+
+#sfondo-bianco{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-color: #f9f5f9;
+    z-index: 0;
+}
+
+::-webkit-scrollbar {
+width: 9px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent !important;
+}
+
+
+::-webkit-scrollbar-thumb {
+background: rgb(36, 36, 36);
+cursor: none !important;
+
+min-height: 3px;
+}
+
+
+
+.vuoto{
+    min-height: 15vh;
+}
+.vuoto2{
+    padding-top: 2%;
+    color: $grigioDettaglio;
+    min-height: 3vh;
+    font-size: 12px;
+}
+
+.vuoto3{
+    width: 100%;
+    min-height: 45vh;
+    margin-top: -8%;
+}
+
+.vuoto4{
+    min-height: 30vh;
+}
+
+p{
+    font-size: 12px !important;
+}
+
+.container-fluid{
+    width:100% !important;
+    margin:0% !important;
+}
+
+.intro{
+   background-color: $bianco;
+   height: 70vh !important;
+   min-height: fit-content;
+   text-align: center;
+   margin-bottom: 10%;
+   padding-bottom: 5%;
+   position: relative;
+   z-index: 4 !important;
+}
+
+
+
+
+
+/*
+.contParallasse{
+    position: relative;
+    height: 100vh !important;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.parallasse {
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    min-height: 10vh !important;
+    top: 0%;
+    transform-style: preserve-3d;
+    transform: translateZ(-200px) scale(1.25) !important;
+}
+
+.fronte {
+    transform: translateZ(0);
+    top:0;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    background: transparent;
+}
+
+
+.parallax-container{
+    width: 100%;
+    height: 100%;
+    background: #5feeae;
+    top:-45%;
+    padding-top: 60px;
+
+}
+
+.container{
+    position: relative;
+    z-index: 3;
+} */
+
+
+
+
+.sottotitolo{
+    padding-top: 5% !important;
+    padding-bottom: 7%;
+    z-index: 1;
+    position: relative;
+}
+
+.sottotitolo3{
+    padding-top: 18% !important;
+    padding-bottom: 7%;
+    z-index: 1;
+    position: relative;
+}
+
+
+
+.comparsa1 {
+    animation: compareDalBassoVeloce 11s ease;
+}
+
+.parteSeconda h2{
+   background-color: $rosaBrillante;
+   color: white !important;    
+   padding-top: 5%;
+   padding-bottom: 5%;
+   margin-left: -1%;
+}
+
+.fotoContenitore{
+    position: relative;
+    left: 7.5%;
+    right: 7.5%;
+    top: -110%;
+    border-style:none;
+    width: 80%;
+}
+
+.spazioRiempitivo {
+    width: 100%;
+    position: relative;
+    background-color: red;
+}
+.spazioDescrittivo{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    top: 0%;
+    bottom: 0;
+    background-color: white;
+    margin: 0% !important;
+    z-index: -1 !important;
+    animation: compareDalBassoBV1 3s ease;
+    transform: translateY(-100px);
+    box-shadow: -1px -6px 5px -6px rgba(41, 42, 43, 0.4);
+    -webkit-box-shadow: -1px -6px 5px -6px rgba(29, 30, 31, 0.4);
+    -moz-box-shadow: -1px -6px 5px -6px rgba(33, 33, 34, 0.4);
+}
+
+ .decorazioneSotto {
+    width: 100%;
+    position: absolute;
+    left: -10%;
+    top:90px;
+    z-index: 0;
+    pointer-events: none;
+    filter: brightness(300%);
+}
+
+.decorazioneSotto img{
+    width: 30%;
+}
+
+.cornice {
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: -1%;
+}
+
+.normale{
+    padding: 10%;
+    width: 100%;
+    height: 10vh;
+    transform: none;
+    transform-style: flat;
+    perspective: none;
+    position: relative;
+}
+
+.contenitoreBuste{
+    padding-top: 5%;
+}
+
+.fuocoArtificio{
+    position: absolute;
+    z-index: -1;
+    top: 15%;
+    width:20%;
+    filter: sepia(80);
+    transform: rotate(15deg);
+}
+
+.busta{
+    position: relative;
+    height:35vh;
+    z-index: 0;
+    min-height: fit-content;
+    background-color: white;
+    border-bottom: 4px dashed $doratoscuro;
+}
+
+.fioreSinistra {
+    position: absolute;
+    bottom: -20%;
+    left: -50%;
+    z-index: 4;
+    pointer-events: none;
+
+}
+
+.corniceDestra {
+    position: absolute;
+    bottom:-65%;
+    left: 0%;
+    transform: rotate(90deg);
+    pointer-events: none;
+}
+
+.corniceDestra img{
+    width: 9.2%;
+}
+
+.perline {
+    position: absolute;
+    bottom:20%;
+    left: 0%;
+    pointer-events: none;
+}
+
+.perline img{
+    width:100%;
+}
+
+.pizzoBase{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    z-index: 0;
+}
+
+.pizzoBase img{
+    width: 100%;
+}
+
+.foglie_Cuore{
+    position: absolute;
+    top: 0%;
+    left: -60%;
+    z-index: 4;
+    pointer-events: none;
+}
+.foglie_Cuore img{
+    width: 28%;
+}
+
+
+.riquadriColori{
+    display: flex;
+    justify-content: space-around;
+}
+
+.infoColori{
+    width: 30%;
+    border: 5px double $provaGrigio;
+    height: 15vh;
+    border-radius: 25px;
+    position: relative;
+}
+
+.colori{
+    width: 100%;
+    height: 70vh;
+    margin-top: 5%;
+    position: relative;
+    visibility: hidden;
+}
+
+.bolla{
+    position: absolute;
+    background-color: white;
+    border-radius: 25px;
+    animation: animazioneBolle 0.5s ease;
+}
+
+@keyframes animazioneBolle {
+    0%{
+        transform: translateY(5vh) scale(1);
+        opacity: 1;
+    }
+   
+    70%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-10vh) scale(3);
+        opacity: 0;
+    }
+}
+
+
+
+.giu{
+        margin-top: 20% !important;
+    }
+
+
+.lineaIcone{
+    padding-bottom: 5%;
+}
+
+.num{
+    background-color: white !important;
+}
+
+.striscia{
+    position: absolute;
+    top: 0%;
+    background-color: $dorato;
+    height: 5vh;
+    z-index: 1;
+    width: 100%;
+}
+
+
+
+.strisciaAggiunta{
+    background-color: $dorato;
+    position: relative;
+    height: fit-content;
+    padding: 2%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    width: 95%;
+    left: 0%;
+    border: 1px solid #7e6d6b;
+    box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(0, 0, 0, 0.5);  
+}
+
+.nocolor{
+    border: 1px solid $bianco;
+    width: 100%;
+    background: none;
+}
+
+.chiusura{
+    height: 15vh;
+    position: absolute;
+    top: 0%;
+    z-index: 1 !important;
+    width: 100%;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+
+.descrizione{
+    position: absolute;
+    width: 25%;
+    min-height: 20vh;
+    background: $azzurroTiepoloChiaro;
+    opacity: 0.95;
+    box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(43, 43, 60, 0.8);
+    z-index: 1;
+    font-weight: 500;
+    top: 40%;
+    left: 70%;
+    color: white;
+    word-wrap: normal;
+    padding: 3% !important;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    display: none;
+}
+
+.lente img{
+    transition: all 0.3s ease-in-out;
+}
+.lente:hover img {
+    transform: scale(1.2);
+}
+
+
+.bottone-aggiunta{
+    padding-left: 2%;
+    padding-right: 2%;
+    border-style: none;
+    background: none;   
+
+    
+    #piu {
+        font-weight: bolder;
+        font-size: 23px;
+    }
+}
+
+
+
+.bottone{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 2%;
+    width: 76%;
+    margin-left: 12%;
+    margin-right: 11%;
+
+}
+
+.bloccoEsterno{
+    width: 25%;
+    border: 3px solid $dorato;
+    border-radius: 25px;
+    margin-top: 4%;
+    padding: 0.5%;
+    position: relative;
+}
+
+.caricamento{
+    width: 10%;
+    background-color: $doratoscuro;
+    border-radius: 25px;
+    animation: caricamento 7s ease-in;
+}
+
+.cuore{
+    position: absolute;
+    top: 18%;
+    z-index: 2;
+    margin-left: 27%;
+    animation: battito 3s ease-out;
+    transform-origin:30% 50%;
+}
+.cuore img {
+    width: 70%;
+}
+
+.areaIntroduttiva{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:wheat;
+    z-index: 2;
+    background-color: white;
+    visibility: hidden;
+    animation: scompare 7s ease-in-out;
+}
+
+.headerFoto {
+    width: 100%;
+    height: 100%;
+    color:wheat;
+    position: relative;
+//background: #4778a1;
+//background: linear-gradient(0deg, rgba(71, 120, 161, 1) 4%, rgba(96, 164, 219, 0.6) 25%, rgba(147, 165, 162, 0) 100%);
+}
+
+.header{
+    width: 100%; 
+    position: relative;
+    margin-bottom: 5% !important;
+    animation: spazioOccupato;
+}
+
+.spazioOccupato{
+    width: 100%; 
+    height: 70vh; 
+    margin:0% !important;
+    animation: riduzioneSpazio 10s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes riduzioneSpazio {
+    0%{
+        transform: translateY(95px) scale(1.5);
+    }
+    90%{
+        transform: translateY(95px) scale(1.5);
+    }
+    100%{
+        transform: translateY(0px) scale(1);
+    }
+}
+
+
+.spazioBianco{
+    height: 100%;
+    background-color: white;
+    margin-top: 5%;
+    z-index: 6 !important;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-top: 0%;
+    visibility: hidden;
+}
+
+.cerchio {
+    background-color: white;
+    background-color: $azzurroTiepoloChiaro;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    padding: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    //position: relative;
+    //object-fit: cover;
+    //object-position: center !important;
+}
+
+.cerchio img{
+    width: 100%;
+}
+
+.infoUno {
+        margin: 0 auto;
+        align-items: center;
+}
+
+
+
+
+//footer
+
+//FOOTER, PARTE FINALE
+.footer{
+    position: relative;
+    display: block;
+    bottom: 0%;
+    padding: 4%;
+    width: 100% !important;
+    padding-bottom: 2% !important;
+    background-color: $biancoGrigio;
+}
+
+
+.cookiesspace{
+    background-color: $nero;
+    color: white;
+    padding: 2%;
+    min-height: 20%;
+    display: none;
+    transition: linear 0.5 ease;
+}
+
+
+.cookieTip:hover ~ .cookiesspace{
+    display: block;
+}

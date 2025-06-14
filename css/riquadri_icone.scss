@@ -1,0 +1,26 @@
+@import "colori";
+
+//SEMOLICE RAPPRESENTAZIONE GRAFICA DI RIQUADRO CON ICONE
+.icona {
+    padding: 5%;
+    background-color: $terraSienaChiara;
+    display: flex;
+    justify-content: center;
+    width: 18% !important;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.icona:hover .binDue{
+    transform: scale(1.1);
+}
+
+.icona:hover{
+    background-color: $bianco;
+}
+
+
+//HTML deve essere collocato in immagine
+.binDue{
+    transition: all 0.3s ease-in-out;
+}

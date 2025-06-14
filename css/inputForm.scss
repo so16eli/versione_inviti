@@ -1,0 +1,78 @@
+@import "colori";
+
+
+//DIV CHE CONTIENE IL FORM
+.form{
+    padding-top: 20%;
+    width: 75%;
+    margin:0 auto;
+    padding-bottom:15% !important;
+    text-align: left;
+}
+
+//CAMPI INPUT STANDARD
+@mixin textInput{
+    width: 90%;
+    height: fit-content;
+    padding: 2%;
+    padding-left: 5%;
+    margin-bottom: 5%;
+    border-style: none;
+    border-bottom: 1px solid $bianco;
+    border-right: 1px solid $bianco;
+    background-color: white;
+    font-size: 14px !important;
+    color: gray;
+    z-index: 1 !important;
+      font-family: "Funnel Sans", sans-serif;
+
+}
+
+.form-input{
+    margin: 1%;
+    @include textInput;
+   }
+
+.rossastroGradient .form-input{
+    color:$biancoChiaro;
+}
+
+.form-input:hover {
+    background-color: $bianco;
+}
+
+@mixin botton{
+    padding: 0.9%;
+    padding-left: 13%;
+    padding-right: 20%;
+    border-style: none;
+    border-radius: 7px 7px 7px 7px;
+    z-index: 15;
+    margin-bottom: 15%;
+    min-height: 40px !important; 
+    color: $cardovano;
+    font-weight: 600;
+}
+
+
+//CAMPI SUBMIT
+.form-inputDue{
+    @include botton;
+    overflow: visible !important;
+    font-size: 16px;
+    z-index: 0;
+    text-decoration: none;
+}
+
+.btnIniziale{
+    margin: 0%;
+    text-align: center;
+    width: 30%;
+}
+
+
+.form-inputDue:hover, .form-inputDue:focus{
+    box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(0, 0, 0, 0.5);
+    transform:  translateY(-0.8px);
+    transition: transform 0.2s ease-in-out;
+}

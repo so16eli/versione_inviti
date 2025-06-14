@@ -1,0 +1,62 @@
+.promemoria {
+  display: block;
+  position: relative !important;
+  min-height: 100vh !important;
+  transform-style: preserve-3d;
+  margin-top: 15% !important;
+  z-index: 0 !important;
+}
+
+.headerEstPartecipa {
+  display: block;
+  position: relative;
+  top: -40%;
+  width: 100% !important;
+  min-height: 20vh !important;
+  transform-style: preserve-3d;
+  transform: translateZ(-60px) scale(1.8) !important;
+  object-fit: contain !important;
+  justify-content: space-around;
+}
+
+.boxImg {
+  width: 70%;
+  margin-left: 15%;
+  z-index: 2 !important;
+  position: relative;
+}
+
+.parallasseSU {
+  display: block;
+  position: relative !important;
+  min-height: 100vh !important;
+  transform-style: preserve-3d;
+  margin-top: 15% !important;
+  z-index: 0 !important;
+}
+
+.headerparSU, .headerparSUtab {
+  display: block;
+  position: relative;
+  top: -40%;
+  width: 100% !important;
+  min-height: 20vh !important;
+  transform-style: preserve-3d;
+  transform: translateZ(-60px) scale(1.8) !important;
+  object-fit: contain !important;
+  justify-content: space-around;
+}
+
+.boxPar {
+  width: 70%;
+  margin-left: 15%;
+  z-index: 2 !important;
+  position: relative;
+  transform-style: preserve-3d;
+  backface-visibility: hidden !important;
+  will-change: transform;
+}
+
+.headerparSUtab {
+  transform: translateZ(-10px) scale(1.5) !important;
+}

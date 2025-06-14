@@ -1,0 +1,55 @@
+.fotoContenitore{
+    position: relative;
+    left: 5%;
+    right: 5%;
+    bottom:10%;
+    border-style:none;
+    width: 90%;
+}
+
+.fioriBianchi {
+    position: absolute;
+    left: -50%;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.fioriBianchi img{
+    width: 35%;
+}
+
+
+.fioreDestra {
+    position: absolute;
+    bottom: -10%;
+    right: -50%;
+    transform: rotate(-25deg);
+    z-index: 1;
+}
+
+.fioreDestra img{
+    width: 34%;
+}
+
+
+//decorazione laterale
+.portaRinghiere{
+    position: relative;
+    top:15%;
+    left: 0;
+    width: 100%;
+    object-fit: contain !important;
+}
+
+.ringhiere{
+    position: absolute;
+    top: 0;
+    left:-55%;
+    z-index: 0;
+    opacity: 0.9;
+    max-height: 100px;
+}
+
+.ringhiere img{
+    width: 100%;
+}
