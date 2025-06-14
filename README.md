@@ -1,1 +1,1 @@
-# versione_inviti
+# modello per partecipazioni versione_inviti
