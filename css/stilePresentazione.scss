@@ -94,6 +94,16 @@ min-height: 3px;
     min-height: 30vh;
 }
 
+.vuoto5{
+    min-height: 70vh;
+}
+
+.fotoSfondo{
+    background-image: url(../immagini/ai-generated.png);
+    background-position: center;
+    filter: contrast(70%);
+}
+
 p{
     font-size: 12px !important;
 }
@@ -411,10 +421,14 @@ p{
     padding: 2%;
     margin-top: 5%;
     margin-bottom: 15%;
-    width: 95%;
+    width: 100%;
     left: 0%;
     border: 1px solid #7e6d6b;
     box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(0, 0, 0, 0.5);  
+}
+
+.contorno{
+        border: 1px solid #7e6d6b;
 }
 
 .nocolor{
@@ -499,7 +513,7 @@ p{
     width: 10%;
     background-color: $doratoscuro;
     border-radius: 25px;
-    animation: caricamento 7s ease-in;
+    animation: caricamento 5s ease-in;
 }
 
 .cuore{
@@ -524,7 +538,7 @@ p{
     z-index: 2;
     background-color: white;
     visibility: hidden;
-    animation: scompare 7s ease-in-out;
+    animation: scompare 5s ease-in-out;
 }
 
 .headerFoto {

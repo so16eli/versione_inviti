@@ -21,6 +21,8 @@ $biancoGrigio: #FAFAF5;
 $azzurroTiepoloUltraChiaro: #cbf1ff;
 $azzurroTiepoloChiaro: #8FBACA;
 $azzurroTiepoloScuro: #67989F;
+$azzurroTiepoloUltraScuro: #38667e;
+
 
 $terraSiena: #D9BF9F;
 $terraSienaChiara: #f6e0c5;
@@ -75,6 +77,10 @@ background-color: $terraSiena !important;
 
 .azzurroTiepoloScuro {
     background-color: $azzurroTiepoloScuro !important;
+}
+
+.azzurroTiepoloUltraScuro {
+    background-color: $azzurroTiepoloUltraScuro !important;
 }
 
 .biancoVero {

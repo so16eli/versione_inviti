@@ -1,32 +1,40 @@
 <!doctype html>
 <html lang="it">
-<head><title>Helios</title>
+<head>
+    <title>élysèe Inviti</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!--css-->
     <link rel="stylesheet" href="css/stilePresentazione.min.css">
 
+    <!-- collegamento a Google font e alcune tipologie di font-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Ruwudu:wght@400;500;600;700&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Marck+Script&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <!-- collegamento a Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
 <body>
 
-
+  <!-- schermata monocolore iniziale con busta, decorazioni e loading-->
   <div class="container-fluid areaIntroduttiva">
                   <div class="vuoto3"> </div>
                       
-                      <div class="row justify-content-center">
+                  <div class="row justify-content-center">
                         
                       <div class="col-3 col-xs-12" style="margin-top: 5%;">
                                   <h2 style="color: #67989F; font-size: 27px;"> Annunciamo con gioia ...</h2>
@@ -50,23 +58,27 @@
                             </div>
                           
                         </div>
+                        
                         <div class="col-3 col-xs-12" style="margin-top: 5%;">
                                   <h2 style="color: #67989F; font-size: 27px;"> il nostro matrimonio!</h2>
-                          </div>
-                      </div>
+                        </div>
+                  </div>
 
-                      <div class="row justify-content-center">
-                          <div class="bloccoEsterno">
-                              <div class="caricamento"> 
-                                  <br>
-                              </div> 
-                          </div>
+                  <div class="row justify-content-center">
+                        
+                        <div class="bloccoEsterno">
+                            <div class="caricamento"> 
+                                <br>
+                            </div> 
+                        </div>
                             
-                      </div>
+                  </div>
 
                   <div class="vuoto3"> </div>
   </div>
 
+
+  <!-- scritte su schermata iniziale header-->
   <div class="container-fluid headerFoto header finisher-header" style="margin-bottom: 0% !important;">
         <!--  <img src="immagini/azzurro.png" class="sfondo"/> --> 
 
@@ -75,10 +87,11 @@
 
               <h2 class="sottotitolo"> Invito ufficiale al matrimonio! </h2>
 
-             
 
   </div>
   
+  <!--Lo spazio descrittivo contiene il div .fotoContenitore con decorazioni e riga con informazioni pratiche
+  come data e luogo-->
   <div class="container-fluid spazioDescrittivo">
             
           <div class="fotoContenitore">
@@ -135,13 +148,15 @@
                    
 
 
-  <div class="container-fluid headerFoto header azzurroChiaro" style=" margin-bottom: -10% !important;">
+  <div class="container-fluid headerFoto header azzurroTiepoloUltraScuro" style=" margin-bottom: -10% !important;">
        <!--<img src="immagini/azzurro.png" class="sfondo" style="transform: rotate(-180deg);"/>-->
       
             <div class="vuoto3"> </div>
           
             <div class="row">
-                    <h4 class="sottotitolo2"> maggiori informazioni</h4>
+                    <a href="#informazioni" class="linkSecondario">
+                      <h4 class="sottotitolo2">vedi Informazioni sull'evento</h4>
+                    </a>            
             </div>
 
             <div class="row">
@@ -155,7 +170,9 @@
             </div>
             
             <div class="row">
-                <h4 class="sottotitolo2"> Non sarò presente </h4>
+                <a href="#nonPartecipazione" class="linkPosizione" style="color: #828340;">
+                  <h4 class="sottotitolo2"> Non sarò presente </h4>
+                </a>
             </div>
 
             <div class="row">
@@ -185,17 +202,17 @@
 
     <div class="promemoria">
      
-      <div class="fioriBianchi" style="left: 5%; bottom: 50%; width: 50%; transform: rotate(-25deg);z-index: 4;">
-        <img src="immagini/icone/fioriBianchiCuore.png"/>
-      </div>
-      <div class="fioriBianchi" style="left:75%; top: -35%; width:40%; transform: rotate(-25deg);z-index: 4;">
-        <img src="immagini/icone/fioreBiancoCuore.png"/>
-      </div>
-      
-      
-      <div class="descrizione" style="display: block;"> <p class="cit" style="display: block;"> All'inizio era solo un incontro</p> </div>
-      <div class="descrizione"> <p class="cit"> E poi sono diventati pomeriggi passati insieme</p> </div>
-      <div class="descrizione"> <p class="cit"> E lunghe passeggiate</p> </div>
+        <div class="fioriBianchi" style="left: 5%; bottom: 50%; width: 50%; transform: rotate(-25deg);z-index: 4;">
+          <img src="immagini/icone/fioriBianchiCuore.png"/>
+        </div>
+        <div class="fioriBianchi" style="left:75%; top: -35%; width:40%; transform: rotate(-25deg);z-index: 4;">
+          <img src="immagini/icone/fioreBiancoCuore.png"/>
+        </div>
+        
+        
+        <div class="descrizione" style="display: block;"> <p class="cit" style="display: block;"> All'inizio era solo un incontro</p> </div>
+        <div class="descrizione"> <p class="cit"> E poi sono diventati pomeriggi passati insieme</p> </div>
+        <div class="descrizione"> <p class="cit"> E lunghe passeggiate</p> </div>
       
 
         <div class="headerEstPartecipa">
@@ -235,71 +252,81 @@
     </div>
 
     <div class="vuoto"> </div>
-
+    <!--partecipazione tramite form-->
     <div class="container-fluid sottotitolo"> <h2> Partecipazione </h2>
     </div>
 
     <div class="container-fluid intro">
       <div class="row g-0 justify-content-around contenitoreBuste">
-          <div class="col-3 col-md-4" >
+          <div class="col-3 col-md-4" id="aggiuntaForm">
+            
             <div class="busta">
               <div class="striscia"></div>
                   <div class="form">
                         
                       <h3> Form partecipazione </h3>
                           <form>
-                                <label name="nome"> Inserimento nome:</label> <input type="text" name="nome" placeholder="Indicato il nome e cognome" class="form-input"/>
-                                <label name="info"> Richiesta esigenze alimentari:</label> <input type="text" name="nome" placeholder="seconda informazione" class="form-input"/>
-                                <label name="infoDue"> Inserimento età (per menù):</label> </label><input type="text" name="nome" placeholder="terza informazione" class="form-input"/> <br>
+                                <label name="nome"> Inserimento nome:</label> <input type="text" name="nomeCognome" placeholder="Indicato il nome e cognome" title="è necessario indicare sia il nome sia il cognome" maxlength="40" minlength="8" class="form-input" required/>
+                                
+                                <label for="Esigenze Alimentari"> Hai delle allergie, intolleranze o altre esigenze alimentari? </label>
+                                <textarea rows="3" class="form-input" name="alimentazione[insieme0]" rows="4" cols="50" placeholder="Inserisci qui eventuali esigenze alimentari...(massimo 150 caratteri)" maxlength="150"></textarea>
+                                <label for="alimentazione[insieme0]" ><input class="typeRadio" type="radio" name="alimentazione[insieme0]" onclick="disabilitaTextArea('alimentazione[insieme0]');" value="Null" />  <span>Non ho esigenze alimentari</span> <span style="color:#a4a442;" onclick="resetRadio('alimentazione[insieme0]');"> &nbsp;&nbsp;(X)</span></label>
 
+                            	  <label for="eta"> Indicare età se si si sta compilando il form per un minorenne sotto i 10 anni</label>
+                                <input class="form-input" type="text" name="eta[]" placeholder="Età" maxlength="3" max="10" style="width:35% !important; margin-right: 12% !important;" />
+                              
 
-                                <div class="strisciaAggiunta">
+                                
+                                </div>  <br><br><br>
+                                <div class="pizzoBase" style="z-index: -1;">
+                                    <img src="immagini/icone/pizzoForm.png"/>
+                                </div>
+
+            </div>
+            <br>
+                               <div class="strisciaAggiunta" onclick="aggiunta();">
                                   <button class="bottone-aggiunta" > <div id="piu">+</div> </button>
                                   <span id="rilevanzaBassa"> Aggiungi familiari e/o accompagnatori</span>  
                                 </div>
-
-                                <input type="submit" name="invia" value="Invia" class="form-inputDue"/>
-                          </form>
+                               
+                                <input type="submit" name="invia" value="Invia" class="form-inputDue btnIniziale biancoVero contorno"/>
+                                 <br>
+                              </form>
                           
-                  </div>
+                  
 
-                  <div class="pizzoBase" style="z-index: -1;">
-                      <img src="immagini/icone/pizzoForm.png"/>
-                  </div>
+                  
 
-            </div>
           </div>
-          <div class="col-9 col-md-6" style="background-color: red;">
-                      <div class="vuoto3"> </div>
+          <div class="col-9 col-md-6 fotoSfondo" style="margin-bottom: 10% !important;">
+                      <div class="vuoto5"> </div>
 
                             <div class="container-fluid">
-                                  <div class="row g-0 justify-content-around" style="margin-bottom: 10%;margin-top: -20%;">
-                                              <div class="col-md-2"></div>
-                                              <div class="col-md-2 icona azzurroChiaro">
+                                <div class="row g-0 justify-content-around" style=" margin-bottom: 0% !important;margin-top: -20%;">
+                                              <div class="col-md-4"></div>
+                                              <div class="col-md-1 icona azzurroChiaro">
                                                   <img width="32" height="32" src="https://img.icons8.com/windows/32/FFFFFF/plus.png" class="binDue" alt="plus"/>
                                               </div>
                                               <div class="col-md-2"></div>
 
-                                              <div class="col-md-2 icona azzurroChiaro">
-                                                    <img width="32" height="32" src="https://img.icons8.com/windows/32/FFFFFF/info--v1.png" class="binDue" alt="info--v1"/>                                              </div>
-                                              </div>
-                                              <div class="col-md-2"></div>
-                                              <div class="col-md-2"></div>
-
-
-                                  </div>
-                            
+                                              <div class="col-md-1 icona azzurroChiaro">
+                                                    <img width="32" height="32" src="https://img.icons8.com/windows/32/FFFFFF/info--v1.png" class="binDue" alt="info--v1">                                              </div>
+                                             
+                                              <div class="col-md-4"></div>
                                   
-                            <div class="infoSecondarie" style="background-color: aliceblue; padding: 5%;"> Ciao! <br>questo modulo è per una singola persona. <br>
-                                  è molto semplice, si compone di solo tre domande!
-                                  Se vuoi compilarlo anche per un'altra persona, o molteplici, scorri al fondo delle domande e clicca su "aggiungi familiari e/o accompagnatori"
-                            </div>
-                            </div>
-          </div>
+                                              <div class="col-md-8 infoSecondarie" style="background-color: aliceblue; padding: 5%; margin: 5%;"> Ciao! <br>questo modulo è per una singola persona. <br>
+                                                    è molto semplice, si compone di solo tre domande!
+                                                    Se vuoi compilarlo anche per un'altra persona, o molteplici, scorri al fondo delle domande e clicca su "aggiungi familiari e/o accompagnatori"
+                                              </div>
+                              </div>
+                      </div>
+        </div>
           
       </div>
+   
     </div>
 
+    <div class="vuoto"> </div>
 
     <div class="container-fluid sottotitolo">
       <h2> informazioni sulla cerimonia </h2>
@@ -314,8 +341,16 @@
                 <div class="col-md-3 infoUno">
 
                       <div class="cerchio">
-                            <img src="https://img.icons8.com/deco-glyph/48/FFFFFF/chapel.png" alt="chapel"/>
+                            <img src="https://img.icons8.com/deco-glyph/48/FFFFFF/chapel.png" alt="chapel"/>                            
                       </div>
+                      <div class="fioriBianchi" style="left:17%; top:0%; width:15%; transform: rotate(0deg);z-index: 3;">
+                            <img src="immagini/icone/fioreBiancoCuore.png"/>
+                      </div>
+                      <div class="fioriBianchi" style="left:28%; top:20%; width:15%; transform: rotate(0deg);z-index: 3;">
+                            <img src="immagini/icone/fioreBiancoCuore.png"/>
+                      </div>
+
+                      
                         	
                           <p class="paragrafoInfo"> Il matrimonio sar&#225; celebrato presso la <br><a class="linkSede"> Chiesa Santa Giulia</a><br> il 20 marzo 2026 <br> alle ore 10:00 <br> 
                           <a href="https://maps.app.goo.gl/VCypUNnDydkkfMr19" class="linkPosizione" target="_blank"> in Piazza Santa Giulia, 7 </a>,<br> 10124 Torino (TO) <br>
@@ -330,6 +365,12 @@
                         <div class="cerchio">
                               <img src="https://img.icons8.com/glyph-neue/64/FFFFFF/dining-room.png" alt="dining-room"/>
                         </div>
+                        <div class="fioriBianchi" style="left:67%; top:0%; width:15%; transform: rotate(0deg);z-index: 3;">
+                            <img src="immagini/icone/fioreBiancoCuore.png"/>
+                      </div>
+                      <div class="fioriBianchi" style="left:58%; top:25%; width:15%; transform: rotate(0deg);z-index: 3;">
+                            <img src="immagini/icone/fioreBiancoCuore.png"/>
+                      </div>
                         <p class="paragrafoInfo"> Il pranzo si terr&#225; presso la  <br><a class="linkSede">Cascina Granello Argento</a><br>  alle ore 12:00<br>
                         <a href="https://maps.app.goo.gl/KMGiRhtUqr84iGiE6" class="linkPosizione" target="_blank">Str.Del Nuovo 5/B </a>, <br>
                             Ivrea (TO)
@@ -370,7 +411,6 @@
                           <a href="https://icons8.com/" class="linkPosizione" target="_blank"> icons8 </a> <br>
                           GIF di 
                           <a href="https://pixabay.com/it/users/mini345678-37279370/?utm_source=link-attribution&utm_medium=referral&utm_campaign=animation&utm_content=7791">Ha Nguyen</a> da <a href="https://pixabay.com/it//?utm_source=link-attribution&utm_medium=referral&utm_campaign=animation&utm_content=7791">Pixabay</a>
-
                       </div>
                       
                 </div>
@@ -427,9 +467,11 @@ new FinisherHeader({
 });
 </script>
 
+<script src="Javascript/aggiuntaComponentiHtml.js"></script>
 <script src="Javascript/intersezione.js"></script>
 <script src="Javascript/effettiVisivi.js"></script>
 <script src="Javascript/hover_click_specifico.js"></script>
+
 
 
 </body>
