@@ -147,7 +147,7 @@ h3 {
 
 label {
   text-align: left !important;
-  font-size: 14px;
+  font-size: 18px;
   color: #535252;
   background-color: white;
   padding-top: 3%;
@@ -174,7 +174,7 @@ label {
   font-size: 60px;
   color: white;
   position: relative;
-  padding-top: 12% !important;
+  padding-top: 12%;
   font-family: "EB Garamond", serif !important;
   font-weight: 600;
   animation: compareDalBasso 1s ease;
@@ -214,14 +214,14 @@ label {
   justify-content: center;
   padding-top: 4%;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 18px;
   color: #7b7b7b;
   text-align: center;
 }
 
 .infoSecondarie {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   color: #555050;
   text-align: center;
 }
@@ -244,7 +244,7 @@ label {
   font-weight: 400;
   margin-left: 2%;
   margin-right: 2%;
-  font-size: 16px !important;
+  font-size: 18px !important;
   color: #555050;
 }
 
@@ -940,7 +940,7 @@ a.linkSede {
   border-bottom: 1px solid #F0EDEE;
   border-right: 1px solid #F0EDEE;
   background-color: white;
-  font-size: 14px !important;
+  font-size: 16px !important;
   color: gray;
   z-index: 1 !important;
   font-family: "Funnel Sans", sans-serif;
@@ -955,32 +955,33 @@ a.linkSede {
 }
 
 .form-inputDue {
-  padding: 0.9%;
-  padding-left: 13%;
-  padding-right: 20%;
+  padding: 15px 15px !important;
+  margin: 0 auto !important;
   border-style: none;
   border-radius: 7px 7px 7px 7px;
-  z-index: 15;
+  z-index: 4;
   margin-bottom: 15%;
   min-height: 40px !important;
   color: #8C4843;
   font-weight: 600;
+  text-align: center;
   overflow: visible !important;
   font-size: 16px;
   z-index: 0;
   text-decoration: none;
+  box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(0, 0, 0, 0.5);
 }
 
 .btnIniziale {
-  margin: 0%;
+  margin: 0 auto;
   text-align: center;
   width: 30%;
 }
 
 .form-inputDue:hover, .form-inputDue:focus {
-  box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(0, 0, 0, 0.5);
-  transform: translateY(-0.8px);
+  transform: translateY(1.5px);
   transition: transform 0.2s ease-in-out;
+  box-shadow: none;
 }
 
 .dorato {
@@ -1348,11 +1349,19 @@ html, body {
   min-height: 3px;
 }
 
+.miniSpazio {
+  min-height: 2vh;
+}
+
+.vuoto0 {
+  min-height: 10vh;
+}
+
 .vuoto {
   min-height: 15vh;
 }
 
-.vuoto2 {
+.vuoto1 {
   padding-top: 2%;
   color: #7b7b7b;
   min-height: 3vh;
@@ -1370,13 +1379,26 @@ html, body {
 }
 
 .vuoto5 {
-  min-height: 70vh;
+  min-height: 40vh;
+}
+
+.vuoto6 {
+  min-height: 80vh;
 }
 
 .fotoSfondo {
   background-image: url(../immagini/ai-generated.png);
+  background-repeat: no-repeat;
   background-position: center;
   filter: contrast(70%);
+  margin: 0 auto;
+  min-height: fit-content !important;
+  margin-bottom: 1.5%;
+}
+
+.icona {
+  margin-bottom: 10%;
+  padding: 6%;
 }
 
 p {
@@ -1497,7 +1519,7 @@ p {
   margin: 0% !important;
   z-index: -1 !important;
   animation: compareDalBassoBV1 3s ease;
-  transform: translateY(-100px);
+  transform: translateY(-140px);
   box-shadow: -1px -6px 5px -6px rgba(41, 42, 43, 0.4);
   -webkit-box-shadow: -1px -6px 5px -6px rgba(29, 30, 31, 0.4);
   -moz-box-shadow: -1px -6px 5px -6px rgba(33, 33, 34, 0.4);
@@ -1705,16 +1727,28 @@ p {
   clip-path: polygon(50% 100%, 0 0, 100% 0);
 }
 
+.contForm {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+}
+
+.col-12.col-md-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .descrizione {
-  position: absolute;
-  width: 25%;
+  position: absolute !important;
+  width: 30%;
   min-height: 20vh;
-  background: #8FBACA;
+  background: #38667e;
   opacity: 0.95;
   box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(43, 43, 60, 0.8);
-  z-index: 1;
+  z-index: 2 !important;
   font-weight: 500;
-  top: 40%;
+  top: 65%;
   left: 70%;
   color: white;
   word-wrap: normal;
@@ -1774,7 +1808,7 @@ p {
   position: absolute;
   top: 18%;
   z-index: 2;
-  margin-left: 27%;
+  margin-left: 30%;
   animation: battito 3s ease-out;
   transform-origin: 30% 50%;
 }
@@ -1788,7 +1822,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 110%;
   color: wheat;
   z-index: 2;
   background-color: white;
@@ -1857,6 +1891,7 @@ p {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  position: relative;
 }
 
 .cerchio img {
@@ -1889,4 +1924,970 @@ p {
 
 .cookieTip:hover ~ .cookiesspace {
   display: block;
+}
+
+.posizioneFiori2 {
+  margin-top: 4%;
+}
+
+.fioriInInfo {
+  position: absolute !important;
+}
+
+.fioriInInfo img {
+  width: 100% !important;
+}
+
+#fioriInfo1 {
+  left: -50%;
+  top: -10%;
+}
+
+#fioriInfo1 img {
+  width: 40% !important;
+}
+
+#fioriInfo2 {
+  left: 70%;
+  top: 50%;
+}
+
+#fioriInfo2 img {
+  width: 160% !important;
+}
+
+#fioriInfo3 {
+  left: -50%;
+  top: -10%;
+}
+
+#fioriInfo3 img {
+  width: 40% !important;
+}
+
+#fioriInfo4 {
+  left: 60%;
+  top: 60%;
+}
+
+#fioriInfo4 img {
+  width: 120% !important;
+}
+
+@media screen and (max-width: 576px) {
+  .titolo {
+    font-size: 42px;
+    padding-top: 50% !important;
+  }
+  .sottotitolo {
+    font-size: 38px;
+  }
+  .paragrafoInfo {
+    line-height: 2.1;
+  }
+  .infoSecondarie {
+    line-height: 2.1;
+  }
+  .spazioDescrittivo {
+    transform: translateY(-110px);
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .areaIntroduttiva {
+    height: 117%;
+  }
+  .busta {
+    height: 23vh;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .fuocoArtificio {
+    top: 20%;
+    width: 30%;
+  }
+  .fotoContenitore {
+    top: -60%;
+    border-style: none;
+    left: -10%;
+    width: 110%;
+  }
+  .fotoContenitore img {
+    width: 60% !important;
+  }
+  .infoPrincipali {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+  }
+  .bottone {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .posizioneFiori2 {
+    left: -20%;
+    transform: translateY(140px) !important;
+    width: 110% !important;
+    z-index: 1;
+  }
+  .posizioneFiori2 img {
+    width: 120% !important;
+  }
+  .miniSpazio {
+    min-height: 3vh;
+  }
+  .vuoto0 {
+    min-height: 90vh;
+  }
+  .vuoto {
+    min-height: 20vh;
+  }
+  .vuoto3 {
+    min-height: 35vh;
+  }
+  .vuoto4 {
+    min-height: 110vh;
+  }
+  .contForm {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .btnIniziale {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .form-inputDue {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    align-items: center;
+  }
+  .sottotitolo3 {
+    z-index: 0 !important;
+    margin-top: 25% !important;
+  }
+  .headerEstPartecipa {
+    margin-top: 170%;
+    z-index: 2 !important;
+  }
+  .intro {
+    margin-top: 5% !important;
+    padding-top: 0% !important;
+    padding-bottom: 20%;
+  }
+  .strisciaAggiunta {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+  .foto {
+    height: 60vh !important;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+  .giu {
+    margin-top: 10%;
+  }
+  .fioriDevice img {
+    width: 100%;
+  }
+  #fDevice1 {
+    left: 0% !important;
+  }
+  #fDevice2 {
+    left: 60% !important;
+    top: -20%;
+  }
+  .descrizione {
+    position: static;
+    display: block !important;
+    height: 15vh !important;
+    min-height: 18vh !important;
+    font-size: 14px;
+    top: auto;
+    left: auto;
+    padding: 5%;
+    width: 50%;
+    word-wrap: normal;
+    margin-left: 50%;
+    margin-top: 90% !important;
+  }
+  .cit {
+    padding-bottom: 0% !important;
+    display: block;
+  }
+  .fotoSfondo {
+    margin-top: 20%;
+    padding-bottom: 25%;
+  }
+  .infoUno {
+    margin-top: 10%;
+    margin-bottom: 40%;
+  }
+  .fioriInInfo img {
+    width: 80%;
+  }
+  #fioriInfo1 {
+    left: -55%;
+    top: -20%;
+  }
+  #fioriInfo1 img {
+    width: 40% !important;
+  }
+  #fioriInfo3 {
+    left: -60%;
+    top: -10%;
+  }
+  #fioriInfo3 img {
+    width: 40% !important;
+  }
+  #fioriInfo4 {
+    left: 50%;
+  }
+  .cookiesspace {
+    padding: 3%;
+    margin: 15%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .titolo {
+    font-size: 42px;
+    padding-top: 40% !important;
+  }
+  .sottotitolo {
+    font-size: 38px;
+  }
+  .sottotitolo2 {
+    font-size: 26px;
+  }
+  .sottotitolo4 {
+    font-size: 21px;
+  }
+  .paragrafoInfo {
+    line-height: 2.1;
+  }
+  .infoSecondarie {
+    line-height: 2.1;
+  }
+  .spazioDescrittivo {
+    transform: translateY(-120px);
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .areaIntroduttiva {
+    height: 117%;
+  }
+  .busta {
+    height: 23vh;
+    width: 40%;
+    margin-left: 30%;
+  }
+  .fuocoArtificio {
+    top: 20%;
+    width: 30%;
+  }
+  .fotoContenitore {
+    top: -70%;
+    border-style: none;
+    left: -10%;
+    width: 120%;
+  }
+  .Contenitore img {
+    width: 60% !important;
+  }
+  .infoPrincipali {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+  }
+  .bottone {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .posizioneFiori2 {
+    left: -20%;
+    transform: translateY(80px) !important;
+    width: 110% !important;
+    z-index: 1;
+  }
+  .posizioneFiori2 img {
+    width: 120% !important;
+  }
+  .miniSpazio {
+    min-height: 3vh;
+  }
+  .vuoto0 {
+    min-height: 90vh;
+  }
+  .vuoto {
+    min-height: 20vh;
+  }
+  .vuoto3 {
+    min-height: 35vh;
+  }
+  .vuoto4 {
+    min-height: 110vh;
+  }
+  .contForm {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .btnIniziale {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .form-inputDue {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    align-items: center;
+  }
+  .sottotitolo3 {
+    z-index: 0 !important;
+    margin-top: 25% !important;
+  }
+  .headerEstPartecipa {
+    margin-top: 120%;
+    z-index: 2 !important;
+  }
+  .intro {
+    margin-top: 5% !important;
+    padding-top: 0% !important;
+    padding-bottom: 20%;
+  }
+  .strisciaAggiunta {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+  .boxImg {
+    width: 50% !important;
+    left: 10%;
+  }
+  .foto {
+    height: 60vh !important;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+  .giu {
+    margin-top: 10%;
+  }
+  .fioriDevice img {
+    width: 100%;
+  }
+  #fDevice1 {
+    left: 0% !important;
+  }
+  #fDevice2 {
+    left: 60% !important;
+    top: -20%;
+  }
+  .descrizione {
+    position: static;
+    display: block !important;
+    height: 15vh !important;
+    min-height: 13vh !important;
+    font-size: 14px;
+    top: auto;
+    left: auto;
+    padding: 5%;
+    width: 50%;
+    word-wrap: normal;
+    margin-left: 50%;
+    margin-top: 90% !important;
+  }
+  .cit {
+    padding-bottom: 0% !important;
+    display: block;
+  }
+  .fotoSfondo {
+    margin-top: 20%;
+    padding-bottom: 25%;
+  }
+  .infoUno {
+    margin-top: 10%;
+    margin-bottom: 40%;
+  }
+  .fioriInInfo img {
+    width: 80%;
+  }
+  #fioriInfo1 {
+    left: -35%;
+    top: -5%;
+  }
+  #fioriInfo1 img {
+    width: 60% !important;
+  }
+  #fioriInfo3 {
+    left: -35%;
+    top: -5%;
+  }
+  #fioriInfo3 img {
+    width: 60% !important;
+  }
+  #fioriInfo4 {
+    left: 50%;
+  }
+  .cookiesspace {
+    padding: 3%;
+    margin: 15%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .titolo {
+    font-size: 42px;
+    padding-top: 50% !important;
+  }
+  .sottotitolo {
+    font-size: 34px;
+    padding-top: 4%;
+  }
+  .sottotitolo2 {
+    font-size: 26px;
+  }
+  .sottotitolo4 {
+    font-size: 21px;
+  }
+  .paragrafoInfo {
+    line-height: 2.3;
+  }
+  .infoSecondarie {
+    line-height: 2.3;
+  }
+  .spazioDescrittivo {
+    transform: translateY(-170px);
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .areaIntroduttiva {
+    height: 117%;
+  }
+  .busta {
+    height: 20vh;
+    width: 50%;
+    margin-left: 25%;
+  }
+  .cuore {
+    margin-left: 28%;
+  }
+  .fuocoArtificio {
+    top: 20%;
+    width: 30%;
+  }
+  .fuocoArtificio img {
+    width: 20%;
+  }
+  .fotoContenitore {
+    top: -90%;
+    border-style: none;
+    left: -10%;
+    width: 110%;
+  }
+  .fotoContenitore img {
+    width: 60% !important;
+  }
+  .infoPrincipali {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+  }
+  .bottone {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .posizioneFiori2 {
+    left: -20%;
+    transform: translateY(140px) !important;
+    width: 110% !important;
+    z-index: 1;
+  }
+  .posizioneFiori2 img {
+    width: 120% !important;
+  }
+  .descrizione {
+    min-height: 13vh;
+  }
+  .miniSpazio {
+    min-height: 3vh;
+  }
+  .vuoto0 {
+    min-height: 90vh;
+  }
+  .vuoto {
+    min-height: 20vh;
+  }
+  .vuoto3 {
+    min-height: 35vh;
+  }
+  .vuoto4 {
+    min-height: 5vh;
+  }
+  .contForm {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .btnIniziale {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .form-inputDue {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    align-items: center;
+  }
+  .sottotitolo3 {
+    z-index: 0 !important;
+    margin-top: 25% !important;
+  }
+  .headerEstPartecipa {
+    transform: translateZ(-20px) scale(1.6) !important;
+    margin-top: 15%;
+    z-index: 2 !important;
+  }
+  .promemoria {
+    min-height: 60vh !important;
+  }
+  .intro {
+    margin-top: 0% !important;
+    padding-top: 5% !important;
+    padding-bottom: 20%;
+  }
+  .strisciaAggiunta {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+  .foto {
+    height: 20vh !important;
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
+  .giu {
+    margin-bottom: 30%;
+  }
+  .fioriDevice img {
+    width: 50%;
+  }
+  #fDevice1 {
+    left: 6% !important;
+    top: 10% !important;
+  }
+  #fDevice2 {
+    left: 75% !important;
+    top: -30% !important;
+  }
+  .pizzoBase {
+    width: 100%;
+  }
+  .fotoSfondo {
+    width: 90%;
+    margin-top: 10%;
+    padding-bottom: 10%;
+    min-height: fit-content !important;
+  }
+  .infoUno {
+    margin-top: 10%;
+    margin-bottom: 40%;
+  }
+  .fioriInInfo img {
+    width: 80%;
+  }
+  #fioriInfo1 {
+    left: -65%;
+    top: -10%;
+  }
+  #fioriInfo1 img {
+    width: 40% !important;
+  }
+  #fioriInfo3 {
+    left: -65%;
+    top: -15%;
+  }
+  #fioriInfo3 img {
+    width: 40% !important;
+  }
+  #fioriInfo4 {
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .titolo {
+    font-size: 42px;
+    padding-top: 40% !important;
+  }
+  .sottotitolo {
+    font-size: 34px;
+    padding-top: 4%;
+  }
+  .sottotitolo2 {
+    font-size: 26px;
+  }
+  .sottotitolo4 {
+    font-size: 21px;
+  }
+  .paragrafoInfo {
+    line-height: 2.3;
+  }
+  .infoSecondarie {
+    line-height: 2.3;
+  }
+  .spazioDescrittivo {
+    transform: translateY(-180px);
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .areaIntroduttiva {
+    height: 117%;
+  }
+  .busta {
+    height: 20vh;
+    width: 30%;
+    margin-left: 35%;
+  }
+  .cuore {
+    margin-left: 25%;
+  }
+  .chiusura {
+    height: 10vh;
+  }
+  .fuocoArtificio {
+    top: 20%;
+    width: 30%;
+  }
+  .fuocoArtificio img {
+    width: 20%;
+  }
+  .fotoContenitore {
+    top: -90%;
+    border-style: none;
+    left: -10%;
+    width: 110%;
+  }
+  .fotoContenitore img {
+    width: 60% !important;
+  }
+  .infoPrincipali {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+  }
+  .bottone {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .posizioneFiori2 {
+    left: -20%;
+    transform: translateY(140px) !important;
+    width: 110% !important;
+    z-index: 1;
+  }
+  .posizioneFiori2 img {
+    width: 120% !important;
+  }
+  .descrizione {
+    min-height: 13vh;
+  }
+  .miniSpazio {
+    min-height: 3vh;
+  }
+  .vuoto0 {
+    min-height: 90vh;
+  }
+  .vuoto {
+    min-height: 20vh;
+  }
+  .vuoto3 {
+    min-height: 35vh;
+  }
+  .vuoto4 {
+    min-height: 5vh;
+  }
+  .contForm {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .btnIniziale {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .form-inputDue {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    align-items: center;
+  }
+  .sottotitolo3 {
+    z-index: 0 !important;
+    margin-top: 25% !important;
+  }
+  .headerEstPartecipa {
+    transform: translateZ(-20px) scale(1.6) !important;
+    margin-top: 15%;
+    z-index: 2 !important;
+  }
+  .promemoria {
+    min-height: 60vh !important;
+  }
+  .intro {
+    margin-top: 0% !important;
+    padding-top: 5% !important;
+    padding-bottom: 20%;
+  }
+  .strisciaAggiunta {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+  .foto {
+    height: 20vh !important;
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
+  .giu {
+    margin-bottom: 30%;
+  }
+  .fioriDevice img {
+    width: 50%;
+  }
+  #fDevice1 {
+    left: 6% !important;
+    top: 10% !important;
+  }
+  #fDevice2 {
+    left: 75% !important;
+    top: -30% !important;
+  }
+  .pizzoBase {
+    width: 100%;
+  }
+  .fotoSfondo {
+    width: 65%;
+    margin-top: 10%;
+    padding-bottom: 10%;
+    min-height: fit-content !important;
+  }
+  .infoUno {
+    margin-top: 10%;
+    margin-bottom: 40%;
+  }
+  .fioriInInfo img {
+    width: 80%;
+  }
+  #fioriInfo1 {
+    left: -65%;
+    top: -10%;
+  }
+  #fioriInfo1 img {
+    width: 40% !important;
+  }
+  #fioriInfo3 {
+    left: -65%;
+    top: -15%;
+  }
+  #fioriInfo3 img {
+    width: 40% !important;
+  }
+  #fioriInfo4 {
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1350px) {
+  .titolo {
+    font-size: 42px;
+    padding-top: 25% !important;
+  }
+  .sottotitolo {
+    font-size: 34px;
+    padding-top: 4%;
+  }
+  .sottotitolo2 {
+    font-size: 26px;
+  }
+  .sottotitolo3 {
+    z-index: 0 !important;
+    margin-top: 25% !important;
+  }
+  .sottotitolo4 {
+    font-size: 21px;
+  }
+  .paragrafoInfo {
+    line-height: 2.3;
+  }
+  .infoSecondarie {
+    line-height: 2.3;
+  }
+  .spazioDescrittivo {
+    transform: translateY(-200px);
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .areaIntroduttiva {
+    height: 117%;
+  }
+  .busta {
+    height: 20vh;
+    width: 100%;
+    margin-left: 0%;
+  }
+  .cuore {
+    margin-left: 25%;
+  }
+  .chiusura {
+    height: 10vh;
+  }
+  .fuocoArtificio {
+    top: 20%;
+    width: 30%;
+  }
+  .fuocoArtificio img {
+    width: 20%;
+  }
+  .fotoContenitore {
+    top: -120%;
+    border-style: none;
+    left: 0%;
+    width: 90%;
+  }
+  .fotoContenitore img {
+    width: 60% !important;
+  }
+  .infoPrincipali {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+  }
+  .bottone {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .posizioneFiori2 {
+    left: 25%;
+    transform: translateY(80px) !important;
+    width: 60% !important;
+    z-index: 1;
+  }
+  .posizioneFiori2 img {
+    width: 120% !important;
+  }
+  .descrizione {
+    min-height: 13vh;
+  }
+  .miniSpazio {
+    min-height: 3vh;
+  }
+  .vuoto0 {
+    min-height: 90vh;
+  }
+  .vuoto {
+    min-height: 20vh;
+  }
+  .vuoto3 {
+    min-height: 45vh;
+  }
+  .vuoto4 {
+    min-height: 5vh;
+  }
+  .contForm {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .btnIniziale {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .form-inputDue {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    align-items: center;
+  }
+  .headerEstPartecipa {
+    transform: translateZ(-20px) scale(1.6) !important;
+    margin-top: 15%;
+    z-index: 2 !important;
+  }
+  .promemoria {
+    min-height: 60vh !important;
+  }
+  .intro {
+    margin-top: 0% !important;
+    padding-top: 5% !important;
+    padding-bottom: 20%;
+  }
+  .strisciaAggiunta {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+  .foto {
+    height: 20vh !important;
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
+  .giu {
+    margin-bottom: 30%;
+  }
+  .fioriDevice img {
+    width: 50%;
+  }
+  #fDevice1 {
+    left: 6% !important;
+    top: 10% !important;
+  }
+  #fDevice2 {
+    left: 75% !important;
+    top: -30% !important;
+  }
+  .pizzoBase {
+    width: 100%;
+  }
+  .fotoSfondo {
+    width: 65%;
+    margin-top: 10%;
+    padding-bottom: 10%;
+    min-height: fit-content !important;
+  }
+  .infoUno {
+    margin-top: 10%;
+    margin-bottom: 40%;
+  }
+  .fioriInInfo img {
+    width: 80%;
+  }
+  #fioriInfo1 {
+    left: -65%;
+    top: -10%;
+  }
+  #fioriInfo1 img {
+    width: 40% !important;
+  }
+  #fioriInfo3 {
+    left: -65%;
+    top: -15%;
+  }
+  #fioriInfo3 img {
+    width: 40% !important;
+  }
+  #fioriInfo4 {
+    left: 50%;
+  }
 }

@@ -31,11 +31,15 @@
 }
 
 .azzurroCielo {
-  background-color: #7DC0F6 !important;
+  background-color: #9dd2fd !important;
 }
 
 .azzurroTiepoloScuro {
   background-color: #67989F !important;
+}
+
+.azzurroTiepoloUltraScuro {
+  background-color: #38667e !important;
 }
 
 .biancoVero {
@@ -138,7 +142,7 @@
   border-bottom: 1px solid #F0EDEE;
   border-right: 1px solid #F0EDEE;
   background-color: white;
-  font-size: 14px !important;
+  font-size: 16px !important;
   color: gray;
   z-index: 1 !important;
   font-family: "Funnel Sans", sans-serif;
@@ -153,30 +157,31 @@
 }
 
 .form-inputDue {
-  padding: 0.9%;
-  padding-left: 13%;
-  padding-right: 20%;
+  padding: 15px 15px !important;
+  margin: 0 auto !important;
   border-style: none;
   border-radius: 7px 7px 7px 7px;
-  z-index: 15;
+  z-index: 4;
   margin-bottom: 15%;
   min-height: 40px !important;
   color: #8C4843;
   font-weight: 600;
+  text-align: center;
   overflow: visible !important;
   font-size: 16px;
   z-index: 0;
   text-decoration: none;
+  box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(0, 0, 0, 0.5);
 }
 
 .btnIniziale {
-  margin: 0%;
+  margin: 0 auto;
   text-align: center;
   width: 30%;
 }
 
 .form-inputDue:hover, .form-inputDue:focus {
-  box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(0, 0, 0, 0.5);
-  transform: translateY(-0.8px);
+  transform: translateY(1.5px);
   transition: transform 0.2s ease-in-out;
+  box-shadow: none;
 }

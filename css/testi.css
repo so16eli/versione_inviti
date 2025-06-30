@@ -38,6 +38,10 @@
   background-color: #67989F !important;
 }
 
+.azzurroTiepoloUltraScuro {
+  background-color: #38667e !important;
+}
+
 .biancoVero {
   background-color: white !important;
 }
@@ -142,7 +146,7 @@ h3 {
 
 label {
   text-align: left !important;
-  font-size: 14px;
+  font-size: 18px;
   color: #535252;
   background-color: white;
   padding-top: 3%;
@@ -169,7 +173,7 @@ label {
   font-size: 60px;
   color: white;
   position: relative;
-  padding-top: 12% !important;
+  padding-top: 12%;
   font-family: "EB Garamond", serif !important;
   font-weight: 600;
   animation: compareDalBasso 1s ease;
@@ -209,14 +213,14 @@ label {
   justify-content: center;
   padding-top: 4%;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 18px;
   color: #7b7b7b;
   text-align: center;
 }
 
 .infoSecondarie {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   color: #555050;
   text-align: center;
 }
@@ -239,7 +243,7 @@ label {
   font-weight: 400;
   margin-left: 2%;
   margin-right: 2%;
-  font-size: 16px !important;
+  font-size: 18px !important;
   color: #555050;
 }
 
