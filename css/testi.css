@@ -136,7 +136,7 @@ h2 {
   font-weight: 400;
   font-style: normal;
   color: #8C4843;
-  font-size: 40px;
+  font-size: 32px !important;
 }
 
 h3 {
@@ -152,6 +152,7 @@ label {
   padding-top: 3%;
   padding-left: 5%;
   margin-bottom: 3%;
+  font-family: "Ruwudu", serif;
 }
 
 #rilevanzaBassa {
@@ -159,6 +160,7 @@ label {
   line-height: 1;
   margin-left: 1%;
   vertical-align: center;
+  font-family: "Ruwudu", serif;
 }
 
 .sottotitolo {
@@ -185,8 +187,20 @@ label {
   z-index: 4 !important;
   text-align: center;
   width: 100%;
+  font-family: "Ruwudu", serif;
   text-decoration: underline;
   font-size: 19px;
+}
+
+.sottotitolo5 {
+  font-size: 14px;
+  color: #f8f5f6;
+  z-index: 4 !important;
+  text-align: center;
+  width: 100%;
+  font-family: "Ruwudu", serif;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .sottotitolo4 {
@@ -195,8 +209,12 @@ label {
   z-index: 4 !important;
   text-align: center;
   width: 100%;
+  font-family: "Ruwudu", serif;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 24px;
+  color: #8C4843;
+  position: relative;
+  padding-top: 20%;
 }
 
 .cit {
@@ -216,6 +234,7 @@ label {
   font-size: 18px;
   color: #7b7b7b;
   text-align: center;
+  font-family: "Ruwudu", serif;
 }
 
 .infoSecondarie {
@@ -223,6 +242,7 @@ label {
   font-size: 18px;
   color: #555050;
   text-align: center;
+  font-family: "Ruwudu", serif;
 }
 
 .sottotitolo2:hover {
@@ -245,11 +265,24 @@ label {
   margin-right: 2%;
   font-size: 18px !important;
   color: #555050;
+  font-family: "Ruwudu", serif;
+  line-height: 2;
 }
 
 a.linkPosizione {
   text-decoration: underline;
   color: #67989F;
+}
+
+a.linkNC {
+  text-decoration: none;
+  color: #f8f5f6;
+  text-align: right !important;
+}
+
+.posNC {
+  position: relative;
+  width: 100%;
 }
 
 a.linkPosizione:hover {

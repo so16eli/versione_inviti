@@ -40,6 +40,10 @@
                             </div>  
             */
 
+@import "testi";
+@import "colori";
+
+
 .tabella {
     visibility: visible;
     display: block !important;
@@ -57,6 +61,12 @@
     transform-style: flat !important;
     will-change: auto !important;
 
+}
+
+.sfondoTabella{
+  background-color: white;
+  padding: 5%;
+  border-radius: 25px;
 }
 
 table{
@@ -79,11 +89,71 @@ table{
 tr, td{
     width: 100%;
     padding: 5%;
-    background-color: $doratoMoltoChiaro !important;
+    background-color: white !important;
 }
 
 th{
     font-weight: 500;
-    background-color: $azzurroTiepoloUltraChiaro !important;
+    background-color: $amarantoViola !important;
+    color: white !important;
     transform: none !important;
+}
+
+
+
+
+
+
+
+#bin{
+    padding-left: 5%;
+}
+#bin:hover{
+    padding-left: 5%;
+    background-color:white;
+}
+
+
+.btn-secondary:hover{
+    background-color: gainsboro;
+    box-shadow: 0px 10px 20px -15px #595858, 5px 5px 15px 5px rgba(0,0,0,0);
+        
+    transform: translateY(-5px) scale(1.1);
+    transition: transform 1s ease-in-out;
+}
+
+.btn-success {
+    background:none !important;
+    color: $nero !important;
+    border: 1px solid $dorato !important;
+}
+.btn-success:hover{
+    background-color:#fefffc !important;
+}
+
+.binUno{
+    display: block;
+}
+.td:hover .binUno{
+    display: none;
+}
+
+.btn-secondary:hover .binUno{
+    display: none;
+}
+
+.binDue{
+    display: none;
+}
+
+.btn-secondary:hover .binDue{
+    display: block;
+}
+
+.td:hover .binDue{
+    display: block;
+}
+
+.td:hover{
+    background-color: rgb(104, 141, 174);
 }

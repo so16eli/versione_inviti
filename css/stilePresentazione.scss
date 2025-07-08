@@ -8,6 +8,7 @@
 @import "decorazioni";
 @import "video";
 @import "tabelle";
+@import "soloPerGestione";
 
 
 
@@ -76,14 +77,13 @@ min-height: 3px;
     min-height: 2vh;
 }
 .vuoto0{
-    min-height: 10vh;
+    min-height: 10vh !important;
 }
 
 
 .vuoto{
     min-height: 15vh;
 }
-
 
 .vuoto1{
     padding-top: 2%;
@@ -118,9 +118,14 @@ min-height: 3px;
     filter: contrast(70%);
     margin: 0 auto;
     min-height: fit-content !important;
-        margin-bottom:1.5%;
+    margin-bottom:1.5%;
+
 
 }
+
+  .rimozMargini {
+    @extend .fotoSfondo;
+    }
 
 .icona {
     margin-bottom: 10%;
@@ -210,11 +215,12 @@ p{
 }
 
 .sottotitolo3{
-    padding-top: 18% !important;
-    padding-bottom: 7%;
+    padding-top: 25% !important;
+    padding-bottom: 15%;
     z-index: 1;
     position: relative;
 }
+
 
 
 
@@ -533,8 +539,17 @@ p{
     width: 76%;
     margin-left: 12%;
     margin-right: 11%;
+    margin-top:5%;
+
 
 }
+
+.lunghezza2 {
+    width: 150% !important;
+    margin-left: -25%;
+    text-align: center;
+}
+
 
 .bloccoEsterno{
     width: 25%;
@@ -741,11 +756,11 @@ margin-top: 4%;
 //titoli
     .titolo{
         font-size: 42px;
-        padding-top: 50% !important;
+        padding-top: 70% !important;
     
     }
     .sottotitolo{
-        font-size: 38px;
+        font-size: 30px;
     }
         .paragrafoInfo{
         line-height: 2.1;
@@ -770,6 +785,10 @@ margin-top: 4%;
         height: 23vh;
         width: 70%;
         margin-left: 15%;
+    }
+    
+    .cuore {
+        margin-left: 25%;
     }
 
 
@@ -856,9 +875,10 @@ margin-top: 4%;
 }
 
 .form-inputDue {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 2%;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+    padding-top: 0% !important;
+    padding-bottom: 0% !important;
     align-items: center;
 }
 
@@ -876,6 +896,13 @@ margin-top: 4%;
     margin-top: 5% !important;
     padding-top: 0% !important;
     padding-bottom: 20%;
+}
+
+.form-inputDue {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    align-items: center;
 }
 
 .strisciaAggiunta{
@@ -976,6 +1003,27 @@ margin-top: 4%;
 }
 
 
+.rimozMargini {
+    margin-top: 0% !important;
+    padding-top: 0% !important;
+    min-height: 40vh !important;
+}
+
+.sottotitolo4 {
+    padding-top: 20%;
+}
+
+
+h2{
+   font-size:28px !important;
+}
+
+.lunghezza2 {
+    width: 150% !important;
+    margin-left: -25%;
+}
+
+
 }
 
 
@@ -997,6 +1045,9 @@ margin-top: 4%;
                     font-size: 21px;
     }
 
+    .sottotitolo5 {
+            font-size: 26px;
+    }
 
         .paragrafoInfo{
         line-height: 2.1;
@@ -1021,6 +1072,10 @@ margin-top: 4%;
         height: 23vh;
         width: 40%;
         margin-left: 30%;
+    }
+
+     .cuore {
+        margin-left: 25%;
     }
 
 
@@ -1229,6 +1284,26 @@ margin-top: 4%;
     margin: 15%;
 }
 
+.rimozMargini {
+    margin-top: 0% !important;
+    padding-top: 0% !important;
+    min-height: 50vh !important;
+}
+
+.sottotitolo4 {
+    padding-top: 10%;
+}
+
+h2{
+   font-size: 34px !important;
+}
+
+.lunghezza2 {
+    width: 150% !important;
+    margin-left: -25%;
+}
+
+
 
 }
 
@@ -1247,10 +1322,15 @@ margin-top: 4%;
             font-size: 26px;
     }
 
-     .sottotitolo4 {
+    .sottotitolo4 {
                     font-size: 21px;
 
             }
+
+    .sottotitolo5 {
+            font-size: 26px;
+    }
+
 
     .paragrafoInfo{
         line-height: 2.3;
@@ -1479,6 +1559,26 @@ margin-top: 4%;
     left: 50%;
 }
 
+.rimozMargini {
+    margin-top: -10% !important;
+    padding-top: 0% !important;
+    min-height: 50vh !important;
+}
+
+.sottotitolo4 {
+    padding-top: 10%;
+}
+
+h2{
+   font-size: 34px !important;
+}
+
+.lunghezza2 {
+    width: 100% !important;
+}
+
+
+
 }
 
 
@@ -1498,10 +1598,15 @@ margin-top: 4%;
     .sottotitolo2 {
             font-size: 26px;
     }
-     .sottotitolo4 {
-                    font-size: 21px;
+    
+    .sottotitolo4 {
+            font-size: 21px;
+    }
 
-            }
+    .sottotitolo5 {
+            font-size: 26px;
+    }
+
     .paragrafoInfo{
         line-height: 2.3;
     }
@@ -1732,6 +1837,25 @@ margin-top: 4%;
     left: 50%;
 }
 
+.rimozMargini {
+    margin-top: -10% !important;
+    padding-top: 0% !important;
+    min-height: 50vh !important;
+}
+
+.sottotitolo4 {
+    padding-top: 13%;
+}
+
+h2{
+   font-size: 34px !important;
+}
+
+.lunghezza2 {
+    width: 100% !important;
+    margin-left: 0% !important;
+}
+
 }
 
 
@@ -1754,15 +1878,19 @@ margin-top: 4%;
                 font-size: 26px;
         }
 
-         .sottotitolo3 {
-            z-index: 0 !important;
-            margin-top: 25% !important;    
-            }
+        .sottotitolo3 {
+        z-index: 0 !important;
+        margin-top: 25% !important;    
+        }
 
-            .sottotitolo4 {
-                    font-size: 21px;
+        .sottotitolo4 {
+                font-size: 21px;
 
-            }
+        }
+
+        .sottotitolo5 {
+                font-size: 26px;
+        }
 
 
         .paragrafoInfo{
@@ -1991,6 +2119,14 @@ margin-top: 4%;
         left: 50%;
     }
 
+    .rimozMargini {
+    min-height: 100vh !important;
+    }
 
+    .lunghezza2 {
+    margin-top: 15%;
+    width: 100% !important;
+    margin-left: 0% !important;
+    }
 
 }

@@ -15,7 +15,7 @@ h2{
     font-weight: 400;
     font-style: normal;
     color: $cardovano;
-    font-size: 40px;
+    font-size: 32px !important;
 }
 
 
@@ -34,6 +34,7 @@ label {
     padding-top: 3%;
     padding-left: 5%;
     margin-bottom: 3%;
+    font-family: $font-familty;
 }
 
 #rilevanzaBassa{
@@ -41,6 +42,7 @@ label {
     line-height: 1;
     margin-left: 1%;
     vertical-align: center;
+    font-family: $font-familty;
 }
 
 .sottotitolo{
@@ -67,6 +69,7 @@ label {
     z-index: 4 !important;
     text-align: center;
     width: 100%;
+    font-family: $font-familty;
 }
 .sottotitolo2{
     @include sottotitoli;
@@ -75,10 +78,20 @@ label {
 
 }
 
+.sottotitolo5{
+    @include sottotitoli;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
 .sottotitolo4{
     @include sottotitoli;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 24px;
+    color: $cardovano;
+       position: relative;
+       padding-top: 20%;
 
 }
 
@@ -99,6 +112,8 @@ label {
     font-size: 18px;
     color: $grigioDettaglio;
     text-align: center;
+    font-family: $font-familty;
+
 }
 
 .infoSecondarie{
@@ -106,6 +121,7 @@ label {
     font-size: 18px;
     color: $nero;
     text-align: center;
+    font-family: $font-familty;
 }
 
 .sottotitolo2:hover {
@@ -128,6 +144,8 @@ label {
     margin-right: 2%;
     font-size: 18px !important;
     color: $nero;
+    font-family: $font-familty;
+    line-height: 2;
 }
 
 
@@ -136,6 +154,17 @@ label {
 a.linkPosizione {
     text-decoration: underline;
     color: $azzurroTiepoloScuro;
+}
+
+a.linkNC {
+    text-decoration: none;
+    color: $biancoChiaro;
+    text-align: right !important;
+}
+
+.posNC {
+    position: relative;
+    width: 100%;
 }
 
 a.linkPosizione:hover {
