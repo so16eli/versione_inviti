@@ -3551,6 +3551,7 @@ p {
   }
   .spazioDescrittivo {
     transform: translateY(-150px);
+    height: 30%;
   }
   ::-webkit-scrollbar {
     display: none;
