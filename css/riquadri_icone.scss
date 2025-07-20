@@ -2,7 +2,9 @@
 
 //SEMOLICE RAPPRESENTAZIONE GRAFICA DI RIQUADRO CON ICONE
 .icona {
-    padding: 2%;
+    padding: 2% 1% 2% 1% !important;
+        margin-top: 20% !important;
+    margin-bottom: -2% !important;
     background-color: $terraSienaChiara;
     display: flex;
     justify-content: center;
@@ -14,6 +16,10 @@
     transform: scale(1.1);
 }
 
+.icona:hover .binTre{
+    transform: scale(1.1);
+}
+
 .icona:hover{
     background-color: $bianco;
 }
@@ -21,5 +27,9 @@
 
 //HTML deve essere collocato in immagine
 .binDue{
+    transition: all 0.3s ease-in-out;
+}
+
+.binTre{
     transition: all 0.3s ease-in-out;
 }

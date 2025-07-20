@@ -197,7 +197,7 @@ label {
 }
 
 #rilevanzaBassa {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1;
   margin-left: 1%;
   vertical-align: center;
@@ -216,7 +216,7 @@ label {
   font-size: 60px;
   color: white;
   position: relative;
-  padding-top: 12%;
+  padding-top: 16%;
   font-family: "EB Garamond", serif !important;
   font-weight: 600;
   animation: compareDalBasso 1s ease;
@@ -493,9 +493,11 @@ a.linkSede {
 table {
   table-layout: auto;
   z-index: 4;
-  font-size: 12px;
+  font-size: 16px;
   padding: 5% !important;
   transform: none !important;
+  font-weight: 100;
+  font-family: "Ruwudu", serif;
 }
 
 .dettagliTabelle {
@@ -516,6 +518,16 @@ th {
   background-color: #AF1B3F !important;
   color: white !important;
   transform: none !important;
+}
+
+.tr:hover .td {
+  background-color: aliceblue !important;
+  color: #38667e;
+  font-weight: 600;
+}
+
+.tdDevice {
+  width: 10%;
 }
 
 #bin {

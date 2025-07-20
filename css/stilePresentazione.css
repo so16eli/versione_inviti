@@ -23,6 +23,10 @@
   background-color: #E76144;
 }
 
+.cardovanoChiaro {
+  background-color: #b86963;
+}
+
 .verdeChiaro {
   background-color: #D2DEB1;
 }
@@ -157,7 +161,7 @@ label {
 }
 
 #rilevanzaBassa {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1;
   margin-left: 1%;
   vertical-align: center;
@@ -176,7 +180,7 @@ label {
   font-size: 60px;
   color: white;
   position: relative;
-  padding-top: 12%;
+  padding-top: 16%;
   font-family: "EB Garamond", serif !important;
   font-weight: 600;
   animation: compareDalBasso 1s ease;
@@ -268,6 +272,7 @@ label {
   color: #555050;
   font-family: "Ruwudu", serif;
   line-height: 2;
+  text-align: center;
 }
 
 a.linkPosizione {
@@ -323,6 +328,10 @@ a.linkSede {
 
 .rossoGeraneo {
   background-color: #E76144;
+}
+
+.cardovanoChiaro {
+  background-color: #b86963;
 }
 
 .verdeChiaro {
@@ -511,6 +520,10 @@ a.linkSede {
 
 .rossoGeraneo {
   background-color: #E76144;
+}
+
+.cardovanoChiaro {
+  background-color: #b86963;
 }
 
 .verdeChiaro {
@@ -725,7 +738,7 @@ a.linkSede {
   }
   100% {
     opacity: 1;
-    transform: translateY(-100px);
+    transform: translateY(-150px);
   }
 }
 
@@ -853,6 +866,10 @@ a.linkSede {
   background-color: #E76144;
 }
 
+.cardovanoChiaro {
+  background-color: #b86963;
+}
+
 .verdeChiaro {
   background-color: #D2DEB1;
 }
@@ -976,6 +993,10 @@ a.linkSede {
 
 .rossoGeraneo {
   background-color: #E76144;
+}
+
+.cardovanoChiaro {
+  background-color: #b86963;
 }
 
 .verdeChiaro {
@@ -1112,7 +1133,7 @@ label {
 }
 
 #rilevanzaBassa {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1;
   margin-left: 1%;
   vertical-align: center;
@@ -1131,7 +1152,7 @@ label {
   font-size: 60px;
   color: white;
   position: relative;
-  padding-top: 12%;
+  padding-top: 16%;
   font-family: "EB Garamond", serif !important;
   font-weight: 600;
   animation: compareDalBasso 1s ease;
@@ -1223,6 +1244,7 @@ label {
   color: #555050;
   font-family: "Ruwudu", serif;
   line-height: 2;
+  text-align: center;
 }
 
 a.linkPosizione {
@@ -1302,6 +1324,11 @@ a.linkSede {
   padding-right: 5%;
 }
 
+.specLog a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
 .rossastroGradient .form-input {
   color: #f8f5f6;
 }
@@ -1311,22 +1338,23 @@ a.linkSede {
 }
 
 .form-inputDue {
-  padding: 15px 15px !important;
+  padding: 15px 20px 5px 20px !important;
   margin: 0 auto !important;
   border-style: none;
   border-radius: 7px 7px 7px 7px;
   z-index: 4;
   margin-bottom: 15%;
   min-height: 40px !important;
-  color: #8C4843;
+  color: #8d8d8d;
   font-family: "Ruwudu", serif;
-  font-weight: 600;
+  font-weight: 600 !important;
   text-align: center;
   overflow: visible !important;
-  font-size: 18px;
+  font-size: 22px;
+  align-items: center !important;
   z-index: 0;
   text-decoration: none;
-  box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 20px -15px #8C4843, 5px 5px 0px 0.2px #8C4843;
 }
 
 .btnIniziale {
@@ -1339,7 +1367,9 @@ a.linkSede {
   transform: translateY(1.5px);
   transition: transform 0.2s ease-in-out;
   box-shadow: none;
-  background-color: gainsboro !important;
+  background-color: #93c096 !important;
+  color: white !important;
+  font-weight: 600;
 }
 
 .dorato {
@@ -1364,6 +1394,10 @@ a.linkSede {
 
 .rossoGeraneo {
   background-color: #E76144;
+}
+
+.cardovanoChiaro {
+  background-color: #b86963;
 }
 
 .verdeChiaro {
@@ -1468,7 +1502,9 @@ a.linkSede {
 }
 
 .icona {
-  padding: 2%;
+  padding: 2% 1% 2% 1% !important;
+  margin-top: 20% !important;
+  margin-bottom: -2% !important;
   background-color: #f6e0c5;
   display: flex;
   justify-content: center;
@@ -1480,11 +1516,19 @@ a.linkSede {
   transform: scale(1.1);
 }
 
+.icona:hover .binTre {
+  transform: scale(1.1);
+}
+
 .icona:hover {
   background-color: #F0EDEE;
 }
 
 .binDue {
+  transition: all 0.3s ease-in-out;
+}
+
+.binTre {
   transition: all 0.3s ease-in-out;
 }
 
@@ -1629,6 +1673,10 @@ video {
   background-color: #E76144;
 }
 
+.cardovanoChiaro {
+  background-color: #b86963;
+}
+
 .verdeChiaro {
   background-color: #D2DEB1;
 }
@@ -1763,7 +1811,7 @@ label {
 }
 
 #rilevanzaBassa {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1;
   margin-left: 1%;
   vertical-align: center;
@@ -1782,7 +1830,7 @@ label {
   font-size: 60px;
   color: white;
   position: relative;
-  padding-top: 12%;
+  padding-top: 16%;
   font-family: "EB Garamond", serif !important;
   font-weight: 600;
   animation: compareDalBasso 1s ease;
@@ -1874,6 +1922,7 @@ label {
   color: #555050;
   font-family: "Ruwudu", serif;
   line-height: 2;
+  text-align: center;
 }
 
 a.linkPosizione {
@@ -1929,6 +1978,10 @@ a.linkSede {
 
 .rossoGeraneo {
   background-color: #E76144;
+}
+
+.cardovanoChiaro {
+  background-color: #b86963;
 }
 
 .verdeChiaro {
@@ -2059,9 +2112,11 @@ a.linkSede {
 table {
   table-layout: auto;
   z-index: 4;
-  font-size: 12px;
+  font-size: 16px;
   padding: 5% !important;
   transform: none !important;
+  font-weight: 100;
+  font-family: "Ruwudu", serif;
 }
 
 .dettagliTabelle {
@@ -2082,6 +2137,16 @@ th {
   background-color: #AF1B3F !important;
   color: white !important;
   transform: none !important;
+}
+
+.tr:hover .td {
+  background-color: aliceblue !important;
+  color: #38667e;
+  font-weight: 600;
+}
+
+.tdDevice {
+  width: 10%;
 }
 
 #bin {
@@ -2208,6 +2273,14 @@ html, body {
   min-height: 2vh;
 }
 
+.vuotoMeno0 {
+  margin-bottom: -5vh !important;
+}
+
+.vuoto00 {
+  min-height: 5vh !important;
+}
+
 .vuoto0 {
   min-height: 10vh !important;
 }
@@ -2249,6 +2322,18 @@ html, body {
   margin: 0 auto;
   min-height: fit-content !important;
   margin-bottom: 1.5%;
+}
+
+.sfondoSotto {
+  background-image: url(../immagini/ai-generated.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: contrast(70%);
+  margin: 0 auto;
+  min-height: 85vh;
+  position: absolute !important;
+  width: 100%;
+  z-index: -1;
 }
 
 .icona {
@@ -2324,7 +2409,7 @@ p {
     z-index: 3;
 } */
 .sottotitolo {
-  padding-top: 5% !important;
+  padding-top: 3% !important;
   padding-bottom: 7%;
   z-index: 1;
   position: relative;
@@ -2353,7 +2438,7 @@ p {
   position: relative;
   left: 7.5%;
   right: 7.5%;
-  top: -110%;
+  top: -90%;
   border-style: none;
   width: 80%;
 }
@@ -2367,13 +2452,13 @@ p {
 .spazioDescrittivo {
   position: relative;
   width: 100%;
-  height: 20%;
+  height: 25%;
   top: 0%;
   bottom: 0;
   background-color: white;
   margin: 0% !important;
   z-index: -1 !important;
-  animation: compareDalBassoBV1 3s ease;
+  animation: compareDalBassoBV1 3s ease 2s;
   transform: translateY(-140px);
   box-shadow: -1px -6px 5px -6px rgba(41, 42, 43, 0.4);
   -webkit-box-shadow: -1px -6px 5px -6px rgba(29, 30, 31, 0.4);
@@ -2426,7 +2511,7 @@ p {
 
 .busta {
   position: relative;
-  height: 35vh;
+  height: 33vh;
   z-index: 0;
   min-height: fit-content;
   background-color: white;
@@ -2551,7 +2636,11 @@ p {
 }
 
 .strisciaAggiunta {
-  background-color: #DACEC4;
+  box-shadow: 0px 10px 20px -15px white, 5px 5px 0px 0.2px white;
+  border-radius: 7px 7px 7px 7px;
+  font-weight: 400 !important;
+  color: white;
+  background-color: #8C4843;
   position: relative;
   height: fit-content;
   padding: 2%;
@@ -2559,12 +2648,11 @@ p {
   margin-bottom: 15%;
   width: 100%;
   left: 0%;
-  border: 1px solid #7e6d6b;
-  box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(0, 0, 0, 0.5);
+  border-style: none;
 }
 
-.contorno {
-  border: 1px solid #7e6d6b;
+.strisciaAggiunta:hover {
+  box-shadow: none;
 }
 
 .nocolor {
@@ -2598,14 +2686,14 @@ p {
   position: absolute !important;
   width: 30%;
   min-height: 20vh;
-  background: #38667e;
+  background: aliceblue;
   opacity: 0.95;
   box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(43, 43, 60, 0.8);
   z-index: 2 !important;
   font-weight: 500;
   top: 65%;
   left: 70%;
-  color: white;
+  color: #555050;
   word-wrap: normal;
   padding: 3% !important;
   padding-top: 7%;
@@ -2631,6 +2719,7 @@ p {
 .bottone-aggiunta #piu {
   font-weight: bolder;
   font-size: 23px;
+  color: white;
 }
 
 .bottone {
@@ -2670,7 +2759,7 @@ p {
   position: absolute;
   top: 18%;
   z-index: 2;
-  margin-left: 30%;
+  margin-left: 33%;
   animation: battito 3s ease-out;
   transform-origin: 30% 50%;
 }
@@ -2779,6 +2868,7 @@ p {
   background-color: #555050;
   color: white;
   padding: 2%;
+  margin-top: 5%;
   min-height: 20%;
   display: none;
   transition: linear 0.5 ease;
@@ -2789,7 +2879,7 @@ p {
 }
 
 .posizioneFiori2 {
-  margin-top: 4%;
+  margin-top: 0%;
 }
 
 .fioriInInfo {
@@ -2923,9 +3013,7 @@ p {
     margin: 0 auto;
   }
   .form-inputDue {
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-    padding-top: 0% !important;
+    padding: 15px 20px 5px 20px !important;
     padding-bottom: 0% !important;
     align-items: center;
   }
@@ -2941,12 +3029,6 @@ p {
     margin-top: 5% !important;
     padding-top: 0% !important;
     padding-bottom: 20%;
-  }
-  .form-inputDue {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 2%;
-    align-items: center;
   }
   .strisciaAggiunta {
     width: 90%;
@@ -2975,7 +3057,7 @@ p {
   .descrizione {
     position: static;
     display: block !important;
-    height: 15vh !important;
+    height: 20vh !important;
     min-height: 18vh !important;
     font-size: 14px;
     top: auto;
@@ -2984,7 +3066,7 @@ p {
     width: 50%;
     word-wrap: normal;
     margin-left: 50%;
-    margin-top: 90% !important;
+    margin-top: 100% !important;
   }
   .cit {
     padding-bottom: 0% !important;
@@ -3135,9 +3217,7 @@ p {
     margin: 0 auto;
   }
   .form-inputDue {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 2%;
+    padding: 15px 20px 5px 20px !important;
     align-items: center;
   }
   .sottotitolo3 {
@@ -3251,7 +3331,7 @@ p {
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .titolo {
     font-size: 42px;
-    padding-top: 50% !important;
+    padding-top: 40% !important;
   }
   .sottotitolo {
     font-size: 34px;
@@ -3351,9 +3431,7 @@ p {
     margin: 0 auto;
   }
   .form-inputDue {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 2%;
+    padding: 15px 20px 5px 20px !important;
     align-items: center;
   }
   .sottotitolo3 {
@@ -3553,9 +3631,7 @@ p {
     margin: 0 auto;
   }
   .form-inputDue {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 2%;
+    padding: 15px 20px 5px 20px !important;
     align-items: center;
   }
   .sottotitolo3 {
@@ -3760,9 +3836,7 @@ p {
     margin: 0 auto;
   }
   .form-inputDue {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 2%;
+    padding: 15px 20px 5px 20px !important;
     align-items: center;
   }
   .headerEstPartecipa {

@@ -41,8 +41,12 @@
    .specLog{
     @include textInput;
     padding-right: 5%;
+    }
 
-}
+    .specLog a {
+        text-decoration: none !important;
+        color: inherit !important;
+    }
 
 .rossastroGradient .form-input{
     color:$biancoChiaro;
@@ -53,16 +57,16 @@
 }
 
 @mixin botton{
-    padding: 15px 15px !important;
+    padding: 15px 20px 5px 20px !important;
     margin:0 auto !important;
     border-style: none;
     border-radius: 7px 7px 7px 7px;
     z-index: 4;
     margin-bottom: 15%;
     min-height: 40px !important; 
-    color: $cardovano;
+    color: rgba(141, 141, 141, 1);
     font-family: $font-familty;
-    font-weight: 600;
+    font-weight: 600 !important;
     text-align: center;
 }
 
@@ -71,10 +75,11 @@
 .form-inputDue{
     @include botton;
     overflow: visible !important;
-    font-size: 18px;
+    font-size: 22px;
+    align-items: center !important;
     z-index: 0;
     text-decoration: none;
-    box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 20px -15px $cardovano, 5px 5px 0px 0.2px $cardovano;
 }
 
 .btnIniziale{
@@ -88,7 +93,9 @@
     transform:  translateY(1.5px);
     transition: transform 0.2s ease-in-out;
     box-shadow: none;
-        background-color: gainsboro !important;
-
+//  background-color: #c84d0f !important;
+    background-color: #93c096 !important;
+    color: white !important;
+    font-weight: 600;
 }
 

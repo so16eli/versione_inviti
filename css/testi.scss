@@ -38,7 +38,7 @@ label {
 }
 
 #rilevanzaBassa{
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1;
     margin-left: 1%;
     vertical-align: center;
@@ -57,7 +57,7 @@ label {
     font-size: 60px; 
     color: white; 
     position: relative;
-    padding-top: 12%;
+    padding-top: 16%;
     font-family: "EB Garamond", serif !important;
     font-weight: 600;
     animation: compareDalBasso 1s ease;
@@ -146,6 +146,7 @@ label {
     color: $nero;
     font-family: $font-familty;
     line-height: 2;
+    text-align:center;
 }
 
 

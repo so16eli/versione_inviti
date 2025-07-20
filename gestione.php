@@ -36,11 +36,11 @@
 
 
     $totPartecipanti=new totalePartecipanti($connessione);
-/*
+
 if(isset($_SESSION['np'])){
     $np=$_SESSION['np'];
 
-    if($np>0) {  */
+    if($np>0) {  
 
     //PARTE EFFETTIVAMENTE COMMENTATA DI BOZZA
     /* $nuovi = $totPartecipanti -> visTotalePartecipanti();
@@ -56,14 +56,14 @@ if(isset($_SESSION['np'])){
 
  
  
-    /*  $primaRiga= $vistaPartecipazione -> selezionePrima($np);
+      $primaRiga= $vistaPartecipazione -> selezionePrima($np);
 
     $riga = $primaRiga -> fetchAll();
     }
 }  
 else{ 
     header("Refresh:0");
-} */
+} 
 
     /*$datatime = $_POST['timeLogin'];
     echo $datatime; */
@@ -128,10 +128,6 @@ else{
                 <div class="row justify-content-center">
                     <div class="col-11 col-md-10 col-lg-10 col-xl-10">
 
-
-                            <div class="gestioneArea">
-                                <h3 style="font-size:16px">PAGINA PER LA GESTIONE DEI PARTECIPANTI</h3>
-                            </div>
 
                             <div class="distanza">        
                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -306,7 +302,7 @@ else{
                                                             <div class="container-fluid"> 
                                                                     <div class="row justify-content-center">
                                                                         <div class="col-5 col-md-5 col-lg-5 col-xl-5">
-                                                                            <div class="bottone lunghezza2"> <button class="form-input btnIniziale biancoVero contorno specLog" >  <a href="creazionePdfTabella.php" style="text-decoration: none; color:inherit;">stampa recap</a></button> </div>
+                                                                            <div class="bottone lunghezza2"> <button class="form-input btnIniziale biancoVero contorno specLog" >  <a href="creazionePdfTabella.php">stampa recap</a></button> </div>
                                                                         </div>
                                                                     </div>
                                                             </div>
@@ -333,7 +329,7 @@ else{
                                                         <h4> partecipanti</h4>
 
                                                             <table class="table">
-                                                                    <tr class="tr"><th class="th" style="border-top-left-radius: 20px; border-bottom-left-radius: 15px;">Partecipante</th><th class="th" style="border-top-right-radius: 20px;border-bottom-right-radius: 15px;">Nome e cognome</th></tr>
+                                                                    <tr class="tr"><th class="th">Partecipante</th><th class="th">Nome e cognome</th></tr>
 
                                                             <?php
                                                             $conteggio1= 1;
@@ -367,7 +363,7 @@ else{
 
                                                         ?>
                                                             </table>
-                                                            <div class="bottone"> <button class="form-inputDue" >  <a href="creazionePdfTabPartecipanti.php" style="text-decoration: none;color: white;">stampa recap di questa tabella</a></button> </div>
+                                                            <div class="bottone"> <button class="form-input btnIniziale biancoVero contorno specLog" >  <a href="creazionePdfTabPartecipanti.php" style="text-decoration: none;">stampa recap di questa tabella</a></button> </div>
 
                                                                     <?php 
                                                                     $conteggio1=$conteggio1-1;
@@ -394,7 +390,7 @@ else{
                                                 <h4> Tabella dei non partecipanti</h4>
 
                                                 <table class="table">
-                                                                            <tr class="tr"><th class="th" style="border-top-left-radius: 20px; border-bottom-left-radius: 15px;">Partecipante</th><th class="th" style="border-top-right-radius: 20px; border-bottom-right-radius: 15px;">Nome e cognome</th><th class="th" style="border-top-right-radius: 20px; border-bottom-right-radius: 15px;">Partecipazione</th><th class="th" style="border-top-right-radius: 20px; border-bottom-right-radius: 15px;">Messaggio</th></tr>
+                                                                            <tr class="tr"><th class="th" >Partecipante</th><th class="th" >Nome e cognome</th><th class="th" >Partecipazione</th><th class="th">Messaggio</th></tr>
 
                                                             <?php
                                                             $conteggio2= 1;
@@ -444,8 +440,8 @@ else{
 
                                                 <table class="table">
                                                             <tr class="tr">
-                                                            <th class="th" style="border-top-left-radius: 20px; border-bottom-left-radius: 15px;">Nome e cognome</th>
-                                                            <th class="th" style="border-top-right-radius: 20px; border-bottom-right-radius: 15px;">Esigenza alimentare</th></tr>
+                                                            <th class="th" >Nome e cognome</th>
+                                                            <th class="th" >Esigenza alimentare</th></tr>
 
                                                                 <?php
                                                                 $conteggio3= 1;
@@ -482,7 +478,7 @@ else{
 
                                                     ?>
                                                 </table>
-                                                <div class="bottone"> <button class="form-inputDue" >  <a href="creazionePdfTabEsigenze.php" style="text-decoration: none;color: white;">stampa recap di questa tabella</a></button> </div>
+                                                <div class="bottone"> <button class="form-input btnIniziale biancoVero contorno specLog" >  <a href="creazionePdfTabEsigenze.php" style="text-decoration: none;">stampa recap di questa tabella</a></button> </div>
 
                                                 <?php 
                                                 $conteggio3=$conteggio3-1;
@@ -504,7 +500,7 @@ else{
                                                                 <h4> Tabella con le persone che hanno bisogno di un passaggio</h4>
 
                                                                 <table class="table">
-                                                                            <tr class="tr"><th class="th" style="border-top-left-radius: 20px; border-bottom-left-radius: 15px;">Nome e cognome</th><th class="th" style="border-top-right-radius: 20px; border-bottom-right-radius: 15px;">Bisogno passaggio </th></tr>
+                                                                            <tr class="tr"><th class="th" >Nome e cognome</th><th class="th" >Bisogno passaggio </th></tr>
 
                                                                                 <?php
                                                                                 $conteggio4= 1;
@@ -538,7 +534,7 @@ else{
 
                                                                         ?>
                                                                 </table>
-                                                                <div class="bottone"> <button class="form-inputDue" >  <a href="creazionePdfTabPassaggio.php" style="text-decoration: none;color: white;">stampa recap di questa tabella</a></button> </div>
+                                                                <div class="bottone"> <button class="form-input btnIniziale biancoVero contorno specLog" >  <a href="creazionePdfTabPassaggio.php" style="text-decoration: none;">stampa recap di questa tabella</a></button> </div>
 
                                                                         <?php
                                                                         $conteggio4 = $conteggio4-1;
@@ -561,7 +557,7 @@ else{
                                                                         <h4> Tabella con le persone di età inferiore ai 10 anni</h4>
 
                                                                         <table class="table">
-                                                                                    <tr class="tr"><th class="th" style="border-top-left-radius: 20px; border-bottom-left-radius: 15px;">Nome e cognome</th><th class="th" style="border-top-right-radius: 20px; border-bottom-right-radius: 15px;">Età</th></tr>
+                                                                                    <tr class="tr"><th class="th">Nome e cognome</th><th class="th" >Età</th></tr>
 
                                                                                         <?php
                                                                                         $conteggio5= 1;
@@ -594,7 +590,7 @@ else{
 
                                                                                 ?>
                                                                         </table>
-                                                                        <div class="bottone"> <button class="form-inputDue" >  <a href="creazionePdfTabEta.php" style="text-decoration: none;color: white;">stampa recap di questa tabella</a></button> </div>
+                                                                        <div class="bottone"> <button class="form-input btnIniziale biancoVero contorno specLog" >  <a href="creazionePdfTabEta.php" style="text-decoration: none;">stampa recap di questa tabella</a></button> </div>
 
                                                                                 <?php
                                                                                 $conteggio5 = $conteggio5-1;
@@ -647,7 +643,7 @@ else{
                                 <table class="table">
                                     <tr class="tr"><th class="th" id="thDevice">Partecipante</th><th class="th">Nome e cognome</th><th class="th">Esigenze alimentari</th><th class="th">Bisogno Passaggio</th><th class="th">Data</th><th class="th" id="thDevice">azione</th></tr>
                                     <?php
-                                    $conteggio= 1;
+                                   /* $conteggio= 1;
                                             
                                     if(isset($_SESSION['np'])){
                                         $np=$_SESSION['np'];
@@ -770,7 +766,7 @@ else{
                                             }
                                             $_SESSION['recapDatiTabellaCompleta'] =$tabellaCompletaEcc;
 
-                                        }
+                                        } */
                                 
                                     ?>
                                 </table>

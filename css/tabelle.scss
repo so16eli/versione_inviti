@@ -63,6 +63,8 @@
 
 }
 
+
+
 .sfondoTabella{
   background-color: white;
   padding: 5%;
@@ -72,9 +74,11 @@
 table{
     table-layout: auto;
     z-index: 4;
-    font-size: 12px;
+    font-size: 16px;
     padding: 5% !important;
     transform: none !important;
+    font-weight: 100;
+    font-family: $font-familty;
 }
 
 .dettagliTabelle{
@@ -97,6 +101,16 @@ th{
     background-color: $amarantoViola !important;
     color: white !important;
     transform: none !important;
+}
+
+.tr:hover .td{
+ background-color: aliceblue !important;
+ color: $azzurroTiepoloUltraScuro;
+ font-weight: 600;
+}
+
+.tdDevice{
+  width: 10%;
 }
 
 

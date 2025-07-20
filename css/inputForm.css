@@ -22,6 +22,10 @@
   background-color: #E76144;
 }
 
+.cardovanoChiaro {
+  background-color: #b86963;
+}
+
 .verdeChiaro {
   background-color: #D2DEB1;
 }
@@ -145,6 +149,10 @@
 
 .rossoGeraneo {
   background-color: #E76144;
+}
+
+.cardovanoChiaro {
+  background-color: #b86963;
 }
 
 .verdeChiaro {
@@ -281,7 +289,7 @@ label {
 }
 
 #rilevanzaBassa {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1;
   margin-left: 1%;
   vertical-align: center;
@@ -300,7 +308,7 @@ label {
   font-size: 60px;
   color: white;
   position: relative;
-  padding-top: 12%;
+  padding-top: 16%;
   font-family: "EB Garamond", serif !important;
   font-weight: 600;
   animation: compareDalBasso 1s ease;
@@ -339,7 +347,7 @@ label {
   font-size: 24px;
   color: #8C4843;
   position: relative;
-  padding-top: 25%;
+  padding-top: 20%;
 }
 
 .cit {
@@ -392,6 +400,7 @@ label {
   color: #555050;
   font-family: "Ruwudu", serif;
   line-height: 2;
+  text-align: center;
 }
 
 a.linkPosizione {
@@ -471,6 +480,11 @@ a.linkSede {
   padding-right: 5%;
 }
 
+.specLog a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
 .rossastroGradient .form-input {
   color: #f8f5f6;
 }
@@ -480,22 +494,23 @@ a.linkSede {
 }
 
 .form-inputDue {
-  padding: 15px 15px !important;
+  padding: 15px 20px 5px 20px !important;
   margin: 0 auto !important;
   border-style: none;
   border-radius: 7px 7px 7px 7px;
   z-index: 4;
   margin-bottom: 15%;
   min-height: 40px !important;
-  color: #8C4843;
+  color: #8d8d8d;
   font-family: "Ruwudu", serif;
-  font-weight: 600;
+  font-weight: 600 !important;
   text-align: center;
   overflow: visible !important;
-  font-size: 18px;
+  font-size: 22px;
+  align-items: center !important;
   z-index: 0;
   text-decoration: none;
-  box-shadow: 0px 10px 20px -15px rgba(141, 141, 141, 0), 5px 5px 0px 0.2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 20px -15px #8C4843, 5px 5px 0px 0.2px #8C4843;
 }
 
 .btnIniziale {
@@ -508,5 +523,7 @@ a.linkSede {
   transform: translateY(1.5px);
   transition: transform 0.2s ease-in-out;
   box-shadow: none;
-  background-color: gainsboro !important;
+  background-color: #93c096 !important;
+  color: white !important;
+  font-weight: 600;
 }
