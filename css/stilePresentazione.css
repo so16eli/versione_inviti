@@ -3528,7 +3528,7 @@ p {
 @media screen and (min-width: 993px) and (max-width: 1200px) {
   .titolo {
     font-size: 42px;
-    padding-top: 40% !important;
+    padding-top: 25% !important;
   }
   .sottotitolo {
     font-size: 34px;
@@ -3584,7 +3584,7 @@ p {
     width: 110%;
   }
   .fotoContenitore img {
-    width: 60% !important;
+    width: 40% !important;
   }
   .infoPrincipali {
     margin-left: 2%;
@@ -3610,6 +3610,9 @@ p {
   }
   .miniSpazio {
     min-height: 3vh;
+  }
+  .vuoto00 {
+    min-height: 5vh;
   }
   .vuoto0 {
     min-height: 90vh;
