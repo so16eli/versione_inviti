@@ -3743,7 +3743,7 @@ p {
     font-size: 26px;
   }
   .linkSecondario {
-    font-size: 26px;
+    font-size: 26px !important;
   }
   .sottotitolo3 {
     z-index: 0 !important;
