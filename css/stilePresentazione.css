@@ -3659,7 +3659,7 @@ p {
     margin-bottom: 15%;
   }
   .foto {
-    height: 60vh !important;
+    height: 50vh !important;
     margin-bottom: 10%;
     margin-top: 5%;
   }
@@ -3667,7 +3667,7 @@ p {
     margin-bottom: 30%;
   }
   .fioriDevice img {
-    width: 50%;
+    width: 30%;
   }
   #fDevice1 {
     left: 6% !important;
