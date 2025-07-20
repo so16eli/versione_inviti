@@ -3742,6 +3742,9 @@ p {
   .sottotitolo2 {
     font-size: 26px;
   }
+  .linkSecondario {
+    font-size: 26px;
+  }
   .sottotitolo3 {
     z-index: 0 !important;
     margin-top: 25% !important;
