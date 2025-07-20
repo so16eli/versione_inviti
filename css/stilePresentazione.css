@@ -3066,7 +3066,7 @@ p {
     width: 50%;
     word-wrap: normal;
     margin-left: 50%;
-    margin-top: 100% !important;
+    margin-top: 120% !important;
   }
   .cit {
     padding-bottom: 0% !important;
@@ -3550,7 +3550,7 @@ p {
     line-height: 2.3;
   }
   .spazioDescrittivo {
-    transform: translateY(-180px);
+    transform: translateY(-150px);
   }
   ::-webkit-scrollbar {
     display: none;
@@ -3658,7 +3658,7 @@ p {
     margin-bottom: 15%;
   }
   .foto {
-    height: 20vh !important;
+    height: 40vh !important;
     margin-bottom: 10%;
     margin-top: 5%;
   }
